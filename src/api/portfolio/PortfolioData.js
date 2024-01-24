@@ -305,7 +305,11 @@ const data = [
             '/assets/img/project/Epideaa/EPIDEAA-website.jpg',
             '/assets/img/project/Epideaa/epideaa_brochure.jpg',
             '/assets/img/project/Epideaa/ROLL-UP-Epideaa.jpg',
-            '/assets/img/project/Epideaa/VISIT-CARD-EPIDEAA.jpg'
+            '/assets/img/project/Epideaa/VISIT-CARD-EPIDEAA.jpg',
+            '/assets/img/project/Epideaa/Tshirt-epideaa-Mockup.jpg',
+            '/assets/img/project/Epideaa/graphic-charter-epideaa-mock-up.jpg',
+            '/assets/img/project/Epideaa/banner-stand-epideaa.jpg',
+            '/assets/img/project/Epideaa/Polo-Shirt-epideaa-Mockup.jpg'
         ],
         isvideo: true,
         component: (props) => <ToastReel {...props}/>,
