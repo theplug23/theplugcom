@@ -54,12 +54,12 @@ const Router = () => {
                 <Routes location={location}>
 
                     <Route path="/" element={<MainDemo/>}/>
-                    {/* <Route path="/demo-2" element={<Demo2/>}/>
+                    <Route path="/demo-2" element={<Demo2/>}/>
                     <Route path="/demo-3" element={<Demo3/>}/>
 
                     <Route path="/slider" element={<SliderOne/>}/>
                     <Route path="/slider-2" element={<SliderTow/>}/>
-                    <Route path="/slider-3" element={<SliderThree/>}/> */}
+                    <Route path="/slider-3" element={<SliderThree/>}/>
 
                     <Route exact path="/portfolio" element={<WorkTow/>}/>
                     {/* <Route exact path="/portfolio-2" element={<Work/>}/> */}
