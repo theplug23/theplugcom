@@ -3,7 +3,7 @@ import './style.scss';
 import "@fancyapps/ui/dist/fancybox.css";
 import {Fancybox as NativeFancybox} from "@fancyapps/ui";
 import DsnGrid from "../DsnGrid";
-import type {DsnGridProps} from "../DsnGrid";
+import {DsnGridProps} from "../DsnGrid";
 import {generateString} from "../../hooks/helper";
 
 
@@ -32,8 +32,8 @@ function BoxGallery({children, bgVid, className, images, options, ...restProps}:
         };
     }, []);
 
-
     return (
+        
         <div className={`dsn-box-gallery  ${className || ''}`} ref={target}>
             <DsnGrid {...restProps} >
                 {images.map(({src, alt, caption, groupPopup}, index) =>
@@ -41,7 +41,6 @@ function BoxGallery({children, bgVid, className, images, options, ...restProps}:
                         caption={caption} key={index}
                         groupPopup={groupPopup || generateId}/>)
                 }
-                {children}
             </DsnGrid>
         </div>
     );

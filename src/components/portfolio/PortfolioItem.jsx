@@ -22,6 +22,7 @@ import lgZoom from "lightgallery/plugins/zoom";
 function PortfolioItem({ portoDetails, textButton, imageOnly, className ,isHome}) {
   const {t} = useTranslation("common")
   const ref = useRef();
+  const home = true
 
   useEffect(() => {
     const video = ref.current.querySelector("video");
@@ -44,38 +45,37 @@ function PortfolioItem({ portoDetails, textButton, imageOnly, className ,isHome}
 
   const [modal, setModal] = useState(false);
 
-  // const toggleModal = () => {
-  //   setModal(!modal);
-  // };
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   return (
-
-    <a href={`portfolio/${portoDetails.slug}`} className={dsnCN("portfolio-item text-center v-dark-head", className)}
-    ref={ref}>
+    <a href={`/portfolio/${portoDetails.slug}`} className={dsnCN("portfolio-item text-center v-dark-head", className)}
+      ref={ref}>
       <img src={portoDetails.src} style={{display:"none"}} />
       <div className="inner-img">
-          <BgImage
-            className={"dsn-swiper-parallax-transform"}
-            src={portoDetails.src}
-            video={portoDetails.video}
-            alt={portoDetails.title}
-            overlay={portoDetails.overlay}
-            height={"100%"}
-            imageOnly={imageOnly}
-          />
+        <BgImage
+          className={"dsn-swiper-parallax-transform"}
+          src={portoDetails.src}
+          video={portoDetails.video}
+          alt={portoDetails.title}
+          overlay={portoDetails.overlay}
+          height={"100%"}
+          imageOnly={imageOnly}
+        />
       </div>
-      {isHome && (
+      {/* {isHome && (
         <div className="info-text">
-        {/* {portoDetails.category && (
-          <MetaPost category={portoDetails.category} separate=", " />
-        )} */}
+          {portoDetails.category && (
+            <MetaPost category={portoDetails.category} separate=", " />
+          )}
 
-        {portoDetails.title && (
-          <h4 className="title-block">{t(portoDetails.title)}</h4>
-        )}
-        {textButton}
-      </div>
-      )}
+          {portoDetails.title && (
+            <h4 className="title-block">{t(portoDetails.title)}</h4>
+          )}
+          {textButton}
+        </div>
+      )} */}
     </a>
   );
 }

@@ -14,7 +14,7 @@ function LoadingPage(props) {
 
     useLayoutEffect(() => {
 
-        const timer = pageLoad(0, 100, 300, function (val) {
+        const timer = pageLoad(0, 100, 100, function (val) {
             setPercent(val);
         });
 

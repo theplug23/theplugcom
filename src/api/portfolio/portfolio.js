@@ -1,5 +1,11 @@
 import SleepWalker from "../../views/portfolio/SleepWalker";
 import ToastReel from "../../views/portfolio/ToastReel";
+import UnderArmour from "../../views/portfolio/UnderArmour"
+import TimeTagWatch from "../../views/portfolio/TimeTagWatch";
+import ReStyling from "../../views/portfolio/ReStyling";
+import WhatIfGold from "../../views/portfolio/WhatIfGold";
+import NileKabutha from "../../views/portfolio/NileKabutha";
+import NovaraConic from "../../views/portfolio/NovaraConic";
 
 export const data = [
     {
@@ -12,7 +18,7 @@ export const data = [
         description: "La réussite dans nos projets vient tout d'abord de la solidarité et de l'harmonie entre les membres de la team",
         overlay: 6,
 
-        // component: (props) => <UnderArmour {...props}/>
+        component: (props) => <UnderArmour {...props}/>
     },
     {
         id: 2,
@@ -23,7 +29,7 @@ export const data = [
         src: '/assets/img/pexels.jpg',
         srcSlider: '/assets/img/pexels.jpg',
         overlay: 6,
-        // component: (props) => <TimeTagWatch {...props} />
+        component: (props) => <TimeTagWatch {...props} />
     },
     {
         id: 3,
@@ -34,21 +40,21 @@ export const data = [
         category: ['Photographie'],
         description: "L'art de reconquerir la photo",
         overlay: 6,
-        // component: (props) => <ReStyling {...props}/>
+        component: (props) => <ReStyling {...props}/>
     },
     {
         id: 4,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
         category: ['Video'],
-        src: '/assets/video.mp4',
+        src: 'https://youtu.be/aDTVWlWItsc?si=DPqEYZW7CeWWSwVQ',
         video: {
             poster: '/assets/img/visualTeam.jpg',
             loop: true
         },
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 5,
@@ -59,7 +65,7 @@ export const data = [
         category: ['Photographie'],
         description: "Conserver le naturel, pour donner un autre aspect à la photographie",
         overlay: 6,
-        // component: (props) => <WhatIfGold {...props}/>
+        component: (props) => <WhatIfGold {...props}/>
     },
     {
         id: 6,
@@ -70,7 +76,7 @@ export const data = [
         category: ['Photographie'],
         description: "Définir une stratégie marketing , est une solution clée pour les études sur le marché",
         overlay: 6,
-        // component: (props) => <WhatIfGold {...props}/>
+        component: (props) => <WhatIfGold {...props}/>
     },
     {
         id: 7,
@@ -81,7 +87,7 @@ export const data = [
         srcSlider: '/assets/img/mockup-presentation.jpg',
         description: "Nous definissons une couverture idéale pour vos présentations",
         overlay: 6,
-        // component: (props) => <NileKabutha {...props}/>
+        component: (props) => <NileKabutha {...props}/>
     },
     {
         id: 8,
@@ -92,18 +98,18 @@ export const data = [
         category: ['Photographie'],
         description: "Avec des experts dans chaque domaines d'activités nous ne cessons de mettre en oeuvre des stratégies imbattables",
         overlay: 6,
-        // component: (props) => <NovaraConic {...props}/>
+        component: (props) => <NovaraConic {...props}/>
     },
     {
         id: 9,
         title: "Des designs adaptés pour vos sites",
         slug: 'web',
-        category: ['Web','Graphisme'],
+        category: ['Web'],
         src: '/assets/img/mockup-sites.jpg',
         srcSlider: '/assets/img/mockup-sites.jpg',
         description: 'Nous intervenons également sur la production de vos sites web',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 10,
@@ -114,7 +120,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 11,
@@ -125,7 +131,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 12,
@@ -136,7 +142,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 13,
@@ -147,7 +153,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 14,
@@ -158,7 +164,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 15,
@@ -169,7 +175,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 16,
@@ -180,7 +186,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 17,
@@ -191,7 +197,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 18,
@@ -202,7 +208,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 19,
@@ -213,7 +219,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 20,
@@ -224,7 +230,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 21,
@@ -235,7 +241,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 22,
@@ -246,7 +252,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 23,
@@ -257,7 +263,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 24,
@@ -268,7 +274,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 25,
@@ -279,7 +285,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 26,
@@ -290,7 +296,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 27,
@@ -301,7 +307,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 28,
@@ -312,7 +318,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 29,
@@ -323,7 +329,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 30,
@@ -334,7 +340,7 @@ export const data = [
         srcSlider: '/assets/img/direction.jpg',
         description: 'Cal was first. The first public university in the great state of California. They are the pioneers. They are the trailblazers who started it all.',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 31,
@@ -345,7 +351,7 @@ export const data = [
         srcSlider: '/assets/img/roll-up.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 32,
@@ -356,7 +362,7 @@ export const data = [
         srcSlider: '/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-1.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 33,
@@ -367,7 +373,7 @@ export const data = [
         srcSlider: '/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-2.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 34,
@@ -378,7 +384,7 @@ export const data = [
         srcSlider: '/assets/img/project/Emd Prod/EMD.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 35,
@@ -389,7 +395,7 @@ export const data = [
         srcSlider: '/assets/img/project/Emd Prod/EMD-logo.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 36,
@@ -400,7 +406,7 @@ export const data = [
         srcSlider: '/assets/img/project/Emd Prod/serges-beynaud-2visual.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 37,
@@ -411,7 +417,7 @@ export const data = [
         srcSlider: '/assets/img/project/Emd Prod/serges-beynaud-visual.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 38,
@@ -422,7 +428,7 @@ export const data = [
         srcSlider: '/assets/img/project/Emd Prod/Toofan-visual.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 39,
@@ -433,7 +439,7 @@ export const data = [
         srcSlider: '/assets/img/project/Epouse Eden/invitation-card.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 40,
@@ -444,7 +450,7 @@ export const data = [
         srcSlider: '/assets/img/project/Epouse Eden/Free_MacBook_Pro_2.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 41,
@@ -455,7 +461,7 @@ export const data = [
         srcSlider: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 42,
@@ -466,7 +472,7 @@ export const data = [
         srcSlider: '/assets/img/project/Madhi/Madhi-logo_.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 43,
@@ -477,7 +483,7 @@ export const data = [
         srcSlider: '/assets/img/project/NHPC/Agenda-NHPC.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 44,
@@ -488,7 +494,7 @@ export const data = [
         srcSlider: '/assets/img/project/NHPC/Agenda-NHPC-2.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 45,
@@ -499,18 +505,7 @@ export const data = [
         srcSlider: '/assets/img/project/Pulse Live/pulselive-Website.jpg',
         description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
         overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
-    },
-    {
-        id: 46,
-        title: "Des designs adaptés",
-        slug: 'brand',
-        category: ['Web'],
-        src: '/assets/img/project/Pulse Live/pulselive-Website-1.jpg',
-        srcSlider: '/assets/img/project/Pulse Live/pulselive-Website-1.jpg',
-        description: 'Nous intervenons également sur la production des roll-up pour vos conférences',
-        overlay: 6,
-        //component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 47,
@@ -524,7 +519,7 @@ export const data = [
         },
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 48,
@@ -538,7 +533,7 @@ export const data = [
         },
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 49,
@@ -552,7 +547,7 @@ export const data = [
         },
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        //component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 50,
@@ -566,97 +561,97 @@ export const data = [
         },
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 51,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: '/assets/img/project/Cake By Maman2noemi/412_400 2.jpg',
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 52,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/412_400.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 53,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/633_950 3.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 54,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/Cupcake-3.png",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 55,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/gallery2.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 56,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/gallery6.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 57,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/gallery7.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 58,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/gallery9.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 59,
         title: "Des Vidéos publicitaires de qualité",
         slug: 'Spot',
-        category: ['Graphisme', 'Web', 'Photographie'],
+        category: ['Photographie'],
         src: "/assets/img/project/Cake By Maman2noemi/service-3.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 60,
@@ -666,7 +661,7 @@ export const data = [
         src: "/assets/img/project/NHPC/CALENDIER-MURAL-02-NHPC-2024-SIMULATION.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 61,
@@ -676,7 +671,7 @@ export const data = [
         src: "/assets/img/project/NHPC/CALENDRIER-CHEVALET-01-NHPC-2024-.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 62,
@@ -686,7 +681,7 @@ export const data = [
         src: "/assets/img/project/NHPC/CALENDRIER-CHEVALET-02-NHPC-2024-.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <ToastReel {...props}/>
+        component: (props) => <ToastReel {...props}/>
     },
     {
         id: 63,
@@ -696,7 +691,7 @@ export const data = [
         src: "/assets/img/project/NHPC/CALENDRIER-MURAL-01-NHPC-2024-SIMULATION.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 64,
@@ -706,7 +701,7 @@ export const data = [
         src: "/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
     },
     {
         id: 65,
@@ -716,7 +711,27 @@ export const data = [
         src: "/assets/img/project/THEPLUG WEDDING/3.jpg",
         description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
         overlay: 6,
-        // component: (props) => <SleepWalker {...props}/>
+        component: (props) => <SleepWalker {...props}/>
+    },
+    {
+        id: 66,
+        title: "Des Vidéos publicitaires de qualité",
+        slug: 'Spot',
+        category: ['Web'],
+        src: "/assets/img/project/Epideaa/EPIDEAA-website.jpg",
+        description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
+        overlay: 6,
+        component: (props) => <SleepWalker {...props}/>
+    }, 
+    {
+        id: 67,
+        title: "Des Vidéos publicitaires de qualité",
+        slug: 'Spot',
+        category: ['Web'],
+        src: "/assets/img/project/Cake By Maman2noemi/Cake-by-maman2noemi-website.jpg",
+        description: 'Une Entreprise devouée à la réalisation de vos projets digitaux',
+        overlay: 6,
+        component: (props) => <SleepWalker {...props}/>
     }
 ]
 

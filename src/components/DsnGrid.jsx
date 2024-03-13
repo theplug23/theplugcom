@@ -61,9 +61,6 @@ const DsnGrid = React.forwardRef((props: DsnGridProps, ref) => {
         console.log("lightGallery has been initialized");
     };
 
-
-    console.log("isGallery", isGallery);
-
     return (!isGallery ? (
         <div
             style={{

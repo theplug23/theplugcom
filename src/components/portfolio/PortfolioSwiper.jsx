@@ -14,7 +14,7 @@ import PortfolioItem from './PortfolioItem';
 import {getPortfolioData} from "../../api/portfolio/PortfolioData";
 
 
-// import LightGallery from "lightgallery/react";
+import LightGallery from "lightgallery/react";
 
 // // import styles
 // import "lightgallery/css/lightgallery.css";
@@ -26,8 +26,8 @@ import {getPortfolioData} from "../../api/portfolio/PortfolioData";
 // import "lightgallery/scss/lg-zoom.scss";
 
 // // import plugins if you need
-// import lgThumbnail from "lightgallery/plugins/thumbnail";
-// import lgZoom from "lightgallery/plugins/zoom";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 
 
@@ -49,18 +49,18 @@ const PortfolioSwiper = ({desktop, mobile, tablet, ...restProps}:SwiperOptions) 
             }}
             {...restProps}
         >
-            {/* <LightGallery
+            <LightGallery
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
 
-            > */}
+            >
             {
                 dataPortfolio.map((item, index) =>
                     <SwiperSlide key={index}>
                         <PortfolioItem portoDetails={item} textButton={t("Voir Plus")} isHome/>
                     </SwiperSlide>)
             }
-            {/* </LightGallery> */}
+            </LightGallery>
 
             <div className="swiper-pagination"/>
 

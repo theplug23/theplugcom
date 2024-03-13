@@ -44,8 +44,8 @@ function MenuContent({className}) {
                         </a>
                     </p>
                     <p className="links over-hidden">
-                        <a className="link-hover" href="mailto:contact.theplugcomm@gmail.com"
-                           data-hover-text="info@dsngrid.com"><i class="fa fa-envelope-o" aria-hidden="true" style= {{color: '#b99226'}}> :</i> contact@theplug-group.com</a>
+                        <a className="link-hover" href="mailto:contact@theplug-group.com"
+                           data-hover-text="contact@theplug-group.com"><i class="fa fa-envelope-o" aria-hidden="true" style= {{color: '#b99226'}}> :</i> contact@theplug-group.com</a>
                     </p>
                 </div>
             </div>

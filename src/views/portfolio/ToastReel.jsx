@@ -63,7 +63,8 @@ const ToastReel = ({data}) => {
                             <li ref={ref}>{t("Art Direction")} : {data.info.direction}</li>
                             {data.info?.design && <li className="mt-1" ref={ref}>{t("Web Design")} : {data.info?.design}</li>}
                             {data.info?.music && <li className="mt-1" ref={ref}>{t("Musique")} : {data.info?.music}</li>}
-                            {data.info?.photography && <li className="mt-1" ref={ref}>{t("Photographie")} : {data.info?.photography}</li>}
+                            {data.info?.photographie && <li className="mt-1" ref={ref}>{t("Photographie")} : {data.info?.photographie}</li>}
+                            {data.info?.videographie && <li className="mt-1" ref={ref}>{t("Videographie")} : {data.info?.videographie}</li>}
                             <li className="mt-1" ref={ref}>{t("Client")} : {data.info.client}</li>
                         </ul>
                     </>}

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import LazyImg from "../LazyImg";
 
 const Bg = styled.div`
-        height : ${props => props.theme.height};
+    height : ${props => props.theme.height};
 `;
 
 const BgImage = React.forwardRef(({src, video, height, overlay, imageOnly, alt, description, ...restProps}, ref) => {
