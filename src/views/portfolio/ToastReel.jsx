@@ -88,6 +88,7 @@ const ToastReel = ({data}) => {
                         images={data.images.map((image) => (
                             {src: image, caption: data.title}
                         ))}
+                        title_mini={data.title_mini}
                         bgVid={data.bgVid}
                     />
                 )

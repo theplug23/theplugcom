@@ -17,7 +17,7 @@ interface boxGalleryProps extends DsnGridProps {
     }
 }
 
-function BoxGallery({children, bgVid, className, images, options, ...restProps}: boxGalleryProps) {
+function BoxGallery({children, bgVid, className, title_mini, images, options, ...restProps}: boxGalleryProps) {
     
     const target = useRef();
     const generateId = generateString(5);
@@ -38,7 +38,7 @@ function BoxGallery({children, bgVid, className, images, options, ...restProps}:
             <DsnGrid {...restProps} >
                 {images.map(({src, alt, caption, groupPopup}, index) =>
                     <BoxGalleryItem bgVid={bgVid} src={src} alt={alt}
-                        caption={caption} key={index}
+                        caption={caption} key={index} title_mini={title_mini}
                         groupPopup={groupPopup || generateId}/>)
                 }
             </DsnGrid>
@@ -52,7 +52,7 @@ BoxGallery.defaultProps = {
     }
 };
 
-export function BoxGalleryItem({src, bgVid, caption, groupPopup, className, ...restProps}) {
+export function BoxGalleryItem({src, bgVid, caption, title_mini, groupPopup, className, ...restProps}) {
     
     function isImageOrVideo(url) {
         if (url.includes('youtube.com') || url.includes('youtu.be')) {
@@ -78,7 +78,7 @@ export function BoxGalleryItem({src, bgVid, caption, groupPopup, className, ...r
                 >
                     <img className="cover-bg-img" src={src} alt={caption}/>
                 </div>
-                {caption && <div className="caption">{caption}</div>}
+                {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div> :
         <div className={`item-box section-padding ${className || ''}`} {...restProps}>
@@ -92,7 +92,7 @@ export function BoxGalleryItem({src, bgVid, caption, groupPopup, className, ...r
                         <source src={src} type='video/mp4' />
                     </video>
                 </div>
-                {caption && <div className="caption">{caption}</div>}
+                {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div>
 

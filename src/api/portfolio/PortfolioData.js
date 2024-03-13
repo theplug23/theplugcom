@@ -324,8 +324,9 @@ const data = [
     {
         id: 11,
         title: "WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)",
-        slug: 'wifor-institute-gmbh',
-        src: '/assets/img/logo/Wifor-Logo.png',
+        title_mini: "WifOR Institute GmbH",
+        slug: 'WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)',
+        src: '/assets/img/project/Wifor/Bild-2.jpg',
         category: ['Photographie', 'Vidéographie'],
         description: [
             "Die WifOR Institute GmbH aus Darmstadt feierte kürzlich ihr bemerkenswertes 15-jähriges Jubiläum mit einer spektakulären Feier im Fußballstadion der Stadt, dem Merck-Stadion am Böllenfalltor. Als beauftragte Fotografen und Videografen hatten wir das Privileg, diesen besonderen Anlass festzuhalten und möchten Ihnen einen Einblick in dieses unvergessliche Ereignis geben.",
@@ -340,6 +341,7 @@ const data = [
         date: "27-02-2024",
         bgVid: '/assets/img/project/Play icon.jpg',
         images: [
+            'https://youtu.be/SzNp8ED68uM',
             '/assets/img/project/Wifor/Bild.jpg',
             '/assets/img/project/Wifor/Bild-2.jpg',
             '/assets/img/project/Wifor/Bild-3.jpg',
