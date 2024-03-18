@@ -60,11 +60,18 @@ const data = [
         overlay: 6,
         date: "07-15-2023",
         href: "https://theplug-wedding.com",
+        video: {
+            poster: '/assets/img/project/THEPLUG WEDDING/theplug wedding website.mp4',
+            loop: true
+        },
+        bgVid: '/assets/img/project/Play icon.jpg',
         images: [
+            '/assets/img/project/THEPLUG WEDDING/theplug wedding website.mp4',
             '/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg',
-            '/assets/img/project/THEPLUG WEDDING/3.jpg',
+            "/assets/img/project/THEPLUG WEDDING/3.jpg",
             '/assets/img/project/THEPLUG WEDDING/Card Stephane.jpg'
         ],
+        isvideo: true,
         component: (props) => <ToastReel {...props} />,
         info: {
             direction: "THEPLUG COM'",
@@ -118,13 +125,12 @@ const data = [
             "En répondant aux directives de notre cliente, nous lui avons proposé un logo épuré qui met en avant son expertise et la qualité exceptionnelle de ses produits, en utilisant une image de pâtissière dans un cercle. Son site internet reflète parfaitement son identité visuelle, mettant en lumière sa compétence et ses performances à travers des produits dont les photographies ont été réalisées par ThePlug Com', accompagnées d'avis clients."
         ],
         overlay: 6,
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.jpg', 
         date: "11-15-2023",
         href: "https://www.maman2noemi.com",
         images: [
             "/assets/video/Website_Presentation_maman2noemi.mp4",
             "/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-1.jpg",
-            '/assets/img/project/Cake By Maman2noemi/graphic-charter-cakebymaman2noemi_mock-up.jpg',
             "/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-2.jpg",
             "/assets/img/project/Cake By Maman2noemi/Cake-by-maman2noemi-website.jpg",
             "/assets/img/project/Cake By Maman2noemi/412_400 2.jpg",
@@ -190,7 +196,6 @@ const data = [
             "/assets/video/EMD_HD.mp4",
             "/assets/img/project/Emd Prod/EMD.jpg",
             "/assets/img/project/Emd Prod/EMD-logo.jpg",
-            "/assets/img/project/Emd Prod/emd-carte.jpg",
             "/assets/img/project/Emd Prod/serges-beynaud-2visual.jpg",
             "/assets/img/project/Emd Prod/serges-beynaud-visual.jpg",
             "/assets/img/project/Emd Prod/Toofan-visual.jpg"
@@ -308,7 +313,6 @@ const data = [
             '/assets/img/project/Epideaa/epideaa_brochure.jpg',
             '/assets/img/project/Epideaa/ROLL-UP-Epideaa.jpg',
             '/assets/img/project/Epideaa/VISIT-CARD-EPIDEAA.jpg',
-            '/assets/img/project/Epideaa/Tshirt-epideaa-Mockup.jpg',
             '/assets/img/project/Epideaa/graphic-charter-epideaa-mock-up.jpg',
             '/assets/img/project/Epideaa/banner-stand-epideaa.jpg',
             '/assets/img/project/Epideaa/Polo-Shirt-epideaa-Mockup.jpg'

@@ -9,19 +9,19 @@ import LazyImg from "../LazyImg";
 
 const BrandDetails = [
     {
-        src: "/assets/img/project/Epideaa/Fichier 3.png",
+        src: "/assets/img/logo/EPIDEAA LOGO OFFICIAL_PP.jpg",
         title: "EPIDEAA",
         href: "https://epideaa.com/",
         linkText: "www.epideaa.com",
     },
     {
-        src: "/assets/img/logo/1.png",
+        src: "/assets/img/logo/BYBIT.png",
         title: "EBONY EVENTS",
         href: "http://ebony-event.com/",
         linkText: "www.ebony-event.com",
     },
     {
-        src: "/assets/img/logo/2.png",
+        src: "/assets/img/logo/UNITED-AFRICAN.png",
         title: "MB-CREATION",
         href: "http://www.mb-creation.com",
         linkText: "www.mb-creation.com",
