@@ -26,7 +26,7 @@ const data = [
             poster: '/assets/img/logo/epouse eden - c2023 logo.png',
             loop: true
         },
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
             "https://youtu.be/SeoF3Ei1E_E",
             "/assets/img/project/Epouse Eden/Business_Card_Mockup.jpg", 
@@ -50,8 +50,8 @@ const data = [
         id: 2,
         title: 'THEPLUG WEDDING',
         slug: 'theplug-wedding',
-        src: '/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg',
-        srcSlider: '/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg',
+        src: '/assets/img/logo/LOGO WEDDING-NOIR.png',
+        srcSlider: '/assets/img/logo/LOGO WEDDING-NOIR.png',
         category: ['Graphisme', 'Vidéographie', 'Web Design', 'Photographie'],
         description: [
             "THEPLUG WEDDING est une agence spécialisée dans la capture des moments les plus mémorables des mariages, tant en photographie qu'en vidéo. La mission de l’agence est d'immortaliser les cérémonies officielles qui unissent deux êtres dans la promesse d'un amour et d'une fidélité éternels. Chez THEPLUG WEDDING, l'amour et l'art fusionnent pour exprimer une beauté exceptionnelle.",
@@ -61,13 +61,14 @@ const data = [
         date: "07-15-2023",
         href: "https://theplug-wedding.com",
         video: {
-            poster: '/assets/img/project/THEPLUG WEDDING/theplug wedding website.mp4',
+            poster: '/assets/video/theplug wedding website.mp4',
             loop: true
         },
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
-            '/assets/img/project/THEPLUG WEDDING/theplug wedding website.mp4',
+            '/assets/video/theplug wedding website.mp4',
             '/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg',
+            '/assets/img/logo/LOGO WEDDING-NOIR.png',
             "/assets/img/project/THEPLUG WEDDING/3.jpg",
             '/assets/img/project/THEPLUG WEDDING/Card Stephane.jpg'
         ],
@@ -97,7 +98,7 @@ const data = [
             poster: '/assets/img/logo/PULSELIVE.png',
             loop: true
         },
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
             "/assets/video/PULSE LIVE_Website presentation-.mp4",
             "/assets/img/project/Pulse Live/pulselive-Website.jpg",
@@ -125,7 +126,7 @@ const data = [
             "En répondant aux directives de notre cliente, nous lui avons proposé un logo épuré qui met en avant son expertise et la qualité exceptionnelle de ses produits, en utilisant une image de pâtissière dans un cercle. Son site internet reflète parfaitement son identité visuelle, mettant en lumière sa compétence et ses performances à travers des produits dont les photographies ont été réalisées par ThePlug Com', accompagnées d'avis clients."
         ],
         overlay: 6,
-        bgVid: '/assets/img/project/Play icon.jpg', 
+        bgVid: '/assets/img/project/Play icon.png', 
         date: "11-15-2023",
         href: "https://www.maman2noemi.com",
         images: [
@@ -163,7 +164,7 @@ const data = [
             "L'entreprise avait besoin d'un site vitrine pour exposer ses divers services et mettre en avant les offres d'une agence de traduction allant au-delà de la simple traduction. Le site met en lumière des services tels que le sous-titrage, la rédaction, la relecture des traductions, l'édition, et bien d'autres prestations que vous pouvez explorer en détail sur la plateforme en ligne."
         ],
         overlay: 6,
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         date: "10-10-2023",
         href: "https://www.esk-translations.com",
         images: [
@@ -190,7 +191,7 @@ const data = [
             "EMD PROD, en pleine expansion dans l'industrie musicale, a sollicité notre expertise pour améliorer sa visibilité. Nous avons pris en charge la conception de son logo ainsi que d'autres outils de communication à venir. En tant qu'accompagnateur privilégié de cette entreprise, nous assumons la responsabilité de concevoir ses divers visuels événementiels pour renforcer sa présence sur le marché."
         ],
         overlay: 6,
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         date: "09-01-2023",
         images: [
             "/assets/video/EMD_HD.mp4",
@@ -217,7 +218,7 @@ const data = [
             "Spécialisée dans la promotion et commercialisation de la culture africaine à travers des œuvres artisanales en Europe, l'entreprise MADHI a sollicité nos services pour la conception de son logo. Ce dernier a été conçu tel un réservoir, symbolisant une maison qui abrite la richesse africaine. Il traduit également des valeurs de résistance, de sérieux, et d'autorité, accentuées par l'utilisation de lettres en majuscules."
         ],
         overlay: 6,
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         date: "09-01-2023",
         images: [ 
             "/assets/video/madhi animation.mp4",
@@ -274,7 +275,7 @@ const data = [
             poster: '/assets/video/FINAL COMP.mp4',
             loop: true
         },
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
             'https://youtu.be/OltI1VpYxFs',
             'https://youtu.be/YgT_nYhYXEE'
@@ -304,7 +305,7 @@ const data = [
             poster: '/assets/video/EPIDEAA animation logo final.mp4',
             loop: true
         },
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
             '/assets/video/Epideaa_video.mp4',
             '/assets/video/EPIDEAA animation logo final.mp4',
@@ -343,7 +344,7 @@ const data = [
         overlay: 6,
         href: "https://www.wifor.com/de/",
         date: "27-02-2024",
-        bgVid: '/assets/img/project/Play icon.jpg',
+        bgVid: '/assets/img/project/Play icon.png',
         images: [
             'https://youtu.be/SzNp8ED68uM',
             '/assets/img/project/Wifor/Bild.jpg',
