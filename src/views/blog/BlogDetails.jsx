@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderDefault from "../../components/header/HeaderDefault";
+
 import DsnGrid from "../../components/DsnGrid";
 import {Container} from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 import ParallaxImage from "../../components/parallax-image/ParallaxImage";
 import ButtonPopup from "../../components/button/button-popup/ButtonPopup";
 import CommentForm from "../../components/blog/CommentForm";
@@ -9,54 +11,23 @@ import NextPage from "../../components/next/NextPage";
 import Footer from "../../components/footer/Footer";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { dateParser } from '../../utils';
-import {dsnCN} from "../../hooks/helper";
-import { ToastContainer, toast } from 'react-toastify';
+import { dateParserTime } from '../../utils';
 
 function BlogDetails({props}) {
-    const {title} = useParams()
+    const {t} = useTranslation("common")
     const [post, setPost] = useState({})
-    const [comments, setComments] = useState([])
-    const [form, setForm] = useState({})
-
-    const handleChange = ({currentTarget}) => {
-        const {name, value} = currentTarget;
-        setForm({...form, [name]: value})
-    }
-    
-    function handleSubmit(e) {
-        e.preventDefault()
-        const now = new Date()
-        form.post_id = parseInt(post[0].id)
-        form.date = now
-        console.log(form)
-        axios.post('http://localhost:3004/comments', form)
-        .then(toast('Commentaire enregistré !'))
-    }
-
-    function getPostByTitle(title) {
-        axios.get('http://localhost:3004/posts?title=' + title)
-        .then(res => setPost(res.data))
-    }
-
-    async function getCommentsByPost(id) {
-        await axios.get('http://localhost:3004/comments?post_id=' + id)
-        .then(res => setComments(res.data))
-    }
+    const params = useParams()
 
     useEffect(() => {
-        getPostByTitle(title)
-        getCommentsByPost(post[0].id)
+        axios.get('https://api.comtheplug.com/api/posts/' + params.title)
+        .then(res => setPost(res.data))
     }, [])
 
-    console.log(post[0])
-    console.log(comments)
-
     const heroContent = {
-        title: post[0].title,
-        date: dateParser(post[0].date),
-        category: post[0].category,
-        src: post[0].image
+        title: post.title,
+        date: dateParserTime(post.created_at),
+        category: ['Uncategorized'],
+        src: post.image
     }
 
     return (
@@ -67,80 +38,26 @@ function BlogDetails({props}) {
                 overlay={4}
                 height="80vh"
             />
-            <ToastContainer />
+
             <Container className="single-post post-content mb-section">
                 <DsnGrid>
 
-                    {post[0].description_1 && <p>{post[0].description_1.bloc_1}</p>}
+                    <div dangerouslySetInnerHTML={{ __html: post.content}}></div>   
 
-                    {post[0].description_1 && <p>{post[0].description_1.bloc_2}</p>}
+                    {/* <div className="p-relative v-dark-head text-center">
+                        <ParallaxImage src="/assets/img/blog/1.jpg" overlay={4}/>
+                        <Container className="v-middle z-index-1">
+                            <ButtonPopup href="https://www.youtube.com/live/l8SRn0XX4Oo?si=PtBx7xPFGm97kXJT"/>
+                        </Container>
+                    </div> */}
 
-                    {post[0].title_plus && <h4><strong>{post[0].title_plus}</strong></h4>}
-
-                    {post[0].description_2 && <p>{post[0].description_2.bloc_1}</p>}
-
-                    {post[0].description_2 && <p>{post[0].description_2.bloc_2}</p>}
-
-                </DsnGrid><br /><br />
+                </DsnGrid>
                 
-                <div className={dsnCN('form-box')}>
-                    <h4 className="mb-30">Ajouter un commentaire</h4>
-                    <form onSubmit={handleSubmit}>
-                        <div className="input__wrap controls">
-                            <div className="form-group">
-                                <label>What's your name?</label>
-                                <input 
-                                    id="form_name" 
-                                    type="text" 
-                                    name="name" 
-                                    placeholder="Type your name"
-                                    onChange={handleChange} 
-                                    required="required"
-                                />
-                            </div>
+                <CommentForm className="mt-section"/>
 
-                            {/* <div className="form-group">
-                                <label>What's your email address?</label>
-                                <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
-                                    required="required"/>
-                            </div> */}
-
-                            <div className="form-group">
-                                <label>Comment?</label>
-                                <textarea 
-                                    id="form_message" 
-                                    className="form-control" 
-                                    name="comment"
-                                    placeholder="Tell us about you and the world" 
-                                    required="required"
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <div className="image-zoom">
-                                <button type="submit">Post Comment</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div style={{marginTop: '50px'}}>
-                    <h4>Commentaires</h4>
-                    {comments.map((comment, i) => (
-                        <div key={i}>
-                            <div style={{display: 'flex', marginTop: '20px'}}>
-                                <span 
-                                    style={{fontSize: '20px', color: 'white', marginRight: '10px'}}
-                                >{comment.name}</span>
-                                <p style={{fontSize: '16px', marginTop: '3px'}}>{comment.comment}</p>
-                            </div>
-                            <span>{dateParser(comment.date)}</span>
-                        </div>
-                    ))}
-                </div>
             </Container>
 
-            <NextPage className="section-margin" text="Next Post" to="/blog-details">
+            <NextPage className="section-margin" text={t("Prochain article")} to="/blog/">
                 A lovely to London with my family
             </NextPage>
             <Footer/>

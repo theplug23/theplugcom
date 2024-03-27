@@ -330,7 +330,7 @@ const data = [
         id: 11,
         title: "WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)",
         title_mini: "WifOR Institute GmbH",
-        slug: 'WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)',
+        slug: 'WifOR-Institute-GmbH-feiert-15-jähriges-Jubiläum-im-Merck-Stadion-am-Böllenfalltor(Darmstadt)',
         src: '/assets/img/project/Wifor/Bild-2.jpg',
         category: ['Photographie', 'Vidéographie'],
         description: [

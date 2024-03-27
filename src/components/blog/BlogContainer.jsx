@@ -18,21 +18,21 @@ const BlogDetails = [
     {
         id: 2,
         title: "Re Styling",
-        image: "/assets/img/blog/2.jpg",
+        image: "/assets/img/blog/1.jpg",
         category: "Photography",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     },
     {
         id: 3,
         title: "Re Styling",
-        image: "/assets/img/blog/3.jpg",
+        image: "/assets/img/blog/1.jpg",
         category: "Photography",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     },
     {
         id: 4,
         title: "Re Styling",
-        image: "/assets/img/blog/4.jpg",
+        image: "/assets/img/blog/1.jpg",
         category: "Photography",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     },
@@ -46,7 +46,7 @@ const BlogDetails = [
     {
         id: 6,
         title: "Re Styling",
-        image: "/assets/img/blog/2.jpg",
+        image: "/assets/img/blog/1.jpg",
         category: "Photography",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     }
@@ -54,12 +54,13 @@ const BlogDetails = [
 
 
 const BlogClassic = () => {
-    const [posts, setPosts] = useState(BlogDetails)
+    const [posts, setPosts] = useState([])
 
-    /*useEffect(() => {
-        axios.get('http://localhost:3004/posts')
+    useEffect(() => {
+        axios.get('https://api.comtheplug.com/api/posts')
         .then(res => setPosts(res.data))
-    }, [])*/
+    }, [])
+
     console.log(posts)
 
     return (
@@ -74,8 +75,8 @@ const BlogClassic = () => {
                                     image={item.image}
                                     title={item.title} 
                                     category={item.category}
-                                    description={longueurTexte(item.description) + '...'} 
-                                    href={`/blog/${item.title}`}
+                                    author={item.author} 
+                                    href={`/blog/${item.slug}`}
                                 />
                             </Col>
                         );
