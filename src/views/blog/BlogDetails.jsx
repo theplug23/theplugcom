@@ -21,13 +21,15 @@ function BlogDetails({props}) {
     useEffect(() => {
         axios.get('https://api.comtheplug.com/api/posts/' + params.title)
         .then(res => setPost(res.data))
+        
     }, [])
 
     const heroContent = {
         title: post.title,
         date: dateParserTime(post.created_at),
         category: ['Uncategorized'],
-        src: post.image
+        src: post.image,
+        vues: post.vues
     }
 
     return (
@@ -45,7 +47,7 @@ function BlogDetails({props}) {
                     <div dangerouslySetInnerHTML={{ __html: post.content}}></div>   
 
                     {/* <div className="p-relative v-dark-head text-center">
-                        <ParallaxImage src="/assets/img/blog/1.jpg" overlay={4}/>
+                        <ParallaxImage src={post.image} overlay={4}/>
                         <Container className="v-middle z-index-1">
                             <ButtonPopup href="https://www.youtube.com/live/l8SRn0XX4Oo?si=PtBx7xPFGm97kXJT"/>
                         </Container>
@@ -53,7 +55,7 @@ function BlogDetails({props}) {
 
                 </DsnGrid>
                 
-                <CommentForm className="mt-section"/>
+                {post.id > 0 && <CommentForm className="mt-section" idPost={post.id} />}
 
             </Container>
 
