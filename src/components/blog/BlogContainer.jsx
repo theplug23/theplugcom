@@ -6,53 +6,6 @@ import BlogItem from './BlogItem';
 import axios from 'axios';
 import { longueurTexte } from '../../utils';
 
-
-const BlogDetails = [
-    {
-        id: 1,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    },
-    {
-        id: 2,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    },
-    {
-        id: 3,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    },
-    {
-        id: 4,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    },
-    {
-        id: 5,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    },
-    {
-        id: 6,
-        title: "Re Styling",
-        image: "/assets/img/blog/1.jpg",
-        category: "Photography",
-        description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
-    }
-]
-
-
 const BlogClassic = () => {
     const [posts, setPosts] = useState([])
 
@@ -60,8 +13,6 @@ const BlogClassic = () => {
         axios.get('https://api.comtheplug.com/api/posts')
         .then(res => setPosts(res.data))
     }, [])
-
-    console.log(posts)
 
     return (
         <section className='dsn-blog'>

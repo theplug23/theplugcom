@@ -11,7 +11,7 @@ function MetaPost({date, category, separate, vues}) {
             {category && <div className="post-cat">
                 {typeof category ==="object"? category.map((cat, index) => <span key={index} data-separate={separate}>{t(cat)}</span>) : <span>{t(category)}</span>}
             </div>}
-            {vues && <span style={{ marginLeft: '20px'}}>{vues}vues</span>}
+            {vues && <span style={{ marginLeft: '20px'}}>{vues} {t("vues")}</span>}
         </Meta>
     )
 }
