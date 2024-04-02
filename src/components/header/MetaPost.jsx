@@ -6,13 +6,13 @@ import { useTranslation } from 'react-i18next';
 function MetaPost({date, category, separate, vues}) {
   const {t} = useTranslation("common")
     return (
-        <Meta className="post-info">
-            {date && <span className="post-date" >{t("Posté le")} {date} </span>}
-            {category && <div className="post-cat">
-                {typeof category ==="object"? category.map((cat, index) => <span key={index} data-separate={separate}>{t(cat)}</span>) : <span>{t(category)}</span>}
-            </div>}
-            {vues && <span style={{ marginLeft: '20px'}}>{vues} {t("vues")}</span>}
-        </Meta>
+      <Meta className="post-info">
+          {date && <span className="post-date">{t("Posté le")} {date} </span>}
+          {category && <div className="post-cat">
+              {typeof category ==="object"? category.map((cat, index) => <span key={index} data-separate={separate}>{t(cat)}</span>) : <span>{t(category)}</span>}
+          </div>}
+          {vues && <span style={{ marginLeft: '20px'}}>{vues} {t("vues")}</span>}
+      </Meta>
     )
 }
 
