@@ -97,7 +97,7 @@ function ParallaxImage(
 }
 
 ParallaxImage.defaultProps = {
-    height: "100vh",
+    height: "40vh",
     heightTable: "80vh",
     heightMobile: "50vh",
     overlay: 0,

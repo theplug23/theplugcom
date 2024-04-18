@@ -12,7 +12,7 @@ function BlogItem({id, image, category, title, author, href}) {
     return (
         <React.Fragment>
             <Helmet>
-                <meta property="og:image" content={`%PUBLIC_URL%/assets/img/${image}`} />
+                <meta property="og:image" content={`%PUBLIC_URL%/${image}`} />
                 <meta property="og:image:type" content="image/jpg" />
             </Helmet>
 

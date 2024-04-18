@@ -5,6 +5,8 @@ import useEffectLocation from "../hooks/useEffectLocation";
 
 import './style.scss';
 import NotFound from "../views/404";
+import { ProductionVideo } from "../components/portfolio/ProductionVideo";
+import ProtectionData from "../views/ProtectionData";
 
 const Scrollbar = React.lazy(() => import("smooth-scrollbar"));
 
@@ -26,6 +28,7 @@ const Services = React.lazy(() => import("../views/Services"));
 const Contact = React.lazy(() => import("../views/Contact"));
 const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
 const Blogs = React.lazy(() => import("../views/Blog"));
+const Impressum = React.lazy(() => import("../views/Impressum"));
 
 
 const Router = () => {
@@ -71,6 +74,9 @@ const Router = () => {
                     <Route exact path="/contact" element={<Contact/>}/>
                     <Route exact path="/blog" element={<Blogs />}></Route>
                     <Route exact path="/blog/:title" element={<BlogDetails/>}/>
+                    <Route exact path="/production-video" element={<ProductionVideo />} />
+                    <Route exact path="/impressum" element={<Impressum />} />
+                    <Route exact path="/protection-data" element={<ProtectionData />} />
                     <Route exact path="*" element={<NotFound />}/>
                 </Routes>
             </Suspense>
