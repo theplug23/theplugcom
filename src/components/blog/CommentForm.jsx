@@ -1,63 +1,109 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {dsnCN} from "../../hooks/helper";
 import './style.scss'
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+import { ToastContainer, toast } from 'react-toastify';
+import { dateParserTime } from '../../utils';
 
-function CommentForm({className, idPost}) {
+
+function CommentForm({className, idPost }) {
     const [form, setForm] = useState({})
+    const {t} = useTranslation("common")
+    const [comments, setComments] = useState([])
 
     const handleChange = ({currentTarget}) => {
         const {name, value} = currentTarget;
         setForm({...form, [name]: value})
     }
 
+    useEffect(() => {
+        getComments()
+    }, [])
+
     function handleSubmit(e) {
         e.preventDefault()
-        const now = new Date()
+        toast('Commentaire envoyé !')
         form.post_id = parseInt(idPost)
-        form.date = now
-        console.log(form)
-        axios.post('http://localhost:3004/comments', form).then(console.log('post posted'))
+        axios.post('https://api.comtheplug.com/api/add-comment', form)
+        .then((res) => {
+            setForm({
+                name: '',
+                email: '',
+                content: ''
+            })
+            toast(res.data.message)
+            setTimeout(() => {
+                window.location.reload()
+            }, 3000)
+        })
     }
-
+    
+    function getComments() {
+        axios.get('https://api.comtheplug.com/api/comments/' + idPost)
+        .then((res) => setComments(res.data))
+    }
 
     return (
         <div className={dsnCN('form-box', className)}>
-            <h4 className="mb-30">Ajouter un commentaire</h4>
+            <ToastContainer />
+
+            <div className="comments">
+                <h4 className="mb-30">{t("Commentaires")}</h4>
+                <div className="input__wrap controls">
+                    {comments &&
+                        comments.map((comment, index) => (
+                            <div className="form-group" key={index}>
+                                <label>{comment.name}</label>
+                                <p>{comment.content}</p>
+                                <label>{dateParserTime(comment.created_at)}</label>
+                                <p>{comment.email !== '' && comment.email}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <h4 className="mb-30">{t("Ajouter un commentaire")}</h4>
             <form onSubmit={handleSubmit}>
                 <div className="input__wrap controls">
                     <div className="form-group">
-                        <label>What's your name?</label>
+                        <label>{t("Quel est votre nom ?")}</label>
                         <input 
                             id="form_name" 
                             type="text" 
                             name="name" 
-                            placeholder="Type your name"
+                            placeholder={t("Entrer votre nom")}
                             onChange={handleChange} 
                             required="required"
                         />
                     </div>
 
-                    {/* <div className="form-group">
-                        <label>What's your email address?</label>
-                        <input id="form_email" type="email" name="email" placeholder="Type your Email Address"
-                               required="required"/>
-                    </div> */}
+                    <div className="form-group">
+                        <label>{t("Quelle est votre adresse email ?")}</label>
+                        <input 
+                            id="form_email" 
+                            type="email" 
+                            name="email" 
+                            placeholder="Type your Email Address"
+                            onChange={handleChange} 
+                        />
+                    </div>
 
                     <div className="form-group">
-                        <label>Comment?</label>
+                        <label>{t("Votre commentaire")}</label>
                         <textarea 
                             id="form_message" 
                             className="form-control" 
-                            name="comment"
-                            placeholder="Tell us about you and the world" 
+                            name="content"
+                            placeholder={t("Dites-nous ce que vous en pensez")}
                             required="required"
                             onChange={handleChange}
                         />
                     </div>
 
                     <div className="image-zoom">
-                        <button type="submit">Post Comment</button>
+                        <button type="submit">{t("Commenter")}</button>
                     </div>
                 </div>
             </form>

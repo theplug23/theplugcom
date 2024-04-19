@@ -66,11 +66,11 @@ const Router = () => {
                     <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/>
 
                     <Route exact path="/about" element={<About/>}/>
-                    <Route exact path="/meet-the-team" element={<MeetTeam/>}/>
+                    {/* <Route exact path="/meet-the-team" element={<MeetTeam/>}/> */}
                     <Route exact path="/services" element={<Services/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
-                    {/* <Route exact path="/blog" element={<Blogs />}></Route>
-                    <Route exact path="/blog/:title" element={<BlogDetails/>}/> */}
+                    <Route exact path="/blog" element={<Blogs />}></Route>
+                    <Route exact path="/blog/:title" element={<BlogDetails/>}/>
                     <Route exact path="*" element={<NotFound />}/>
                 </Routes>
             </Suspense>

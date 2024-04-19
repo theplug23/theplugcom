@@ -8,8 +8,8 @@ import TitleSection from '../components/heading/TitleSection';
 import BlogClassic from '../components/blog/BlogContainer';
 
 const headerContent = {
-    title: "Blog",
-    description: `Découvrez nos différents blogs quotidiens`,
+    title: "Notre Blog",
+    description: `Découvrez nos différentes thématiques`,
 };
 
 export default function Blogs() {

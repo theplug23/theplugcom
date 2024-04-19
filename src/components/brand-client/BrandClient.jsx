@@ -15,6 +15,36 @@ const BrandDetails = [
         linkText: "www.epideaa.com",
     },
     {
+        src: "/assets/img/logo/Logo-SoPlus-Dunkel.png",
+        title: "SoPlus",
+        href: "https://soplusline.com/",
+        linkText: "www.soplusline.com",
+    },
+    {
+        src: "/assets/img/logo/Wifor-Logo.png",
+        title: "Wifor",
+        href: "https://www.wifor.com/en/",
+        linkText: "www.wifor.com/en/",
+    },
+    {
+        src: "/assets/img/logo/Logo NHPC - PNG.png",
+        title: "NHPC",
+        href: "https://nhpc.org/",
+        linkText: "www.nhpc.org",
+    },
+    {
+        src: "/assets/img/logo/LOGO WEDDING-NOIR.png",
+        title: "THEPLUG WEDDING",
+        href: "https://theplug-wedding.com/",
+        linkText: "www.theplug-wedding.com",
+    },
+    {
+        src: "/assets/img/logo/cakebynoemi.png",
+        title: "MAMAN2NOEMI",
+        href: "https://www.maman2noemi.com/",
+        linkText: "www.maman2noemi.com",
+    },
+    {
         src: "/assets/img/logo/BYBIT.png",
         title: "EBONY EVENTS",
         href: "http://ebony-event.com/",
@@ -27,16 +57,10 @@ const BrandDetails = [
         linkText: "www.mb-creation.com",
     },
     {
-        src: "/assets/img/logo/PULSELIVE.png",
+        src: "/assets/img/logo/PLUSELIVE.png",
         title: "PULSE LIVE",
         href: "https://pulse-live.de/",
         linkText: "www.pulse-live.de",
-    },
-    {
-        src: "/assets/img/logo/cakebynoemi.png",
-        title: "MAMAN2NOEMI",
-        href: "https://www.maman2noemi.com/",
-        linkText: "www.maman2noemi.com",
     },
     {
         src: "/assets/img/logo/EsK_Translations.png",
@@ -57,12 +81,6 @@ const BrandDetails = [
         linkText: "www.google.com",
     },
     {
-        src: "/assets/img/logo/Logo NHPC - PNG.png",
-        title: "NHPC",
-        href: "https://nhpc.org/",
-        linkText: "www.nhpc.org",
-    },
-    {
         src: "/assets/img/logo/epouse eden - c2023 logo.png",
         title: "EPOUSE EDEN",
         href: "https://google.com/",
@@ -74,23 +92,18 @@ const BrandDetails = [
         href: "https://alvihotel.com/",
         linkText: "www.alvi7hotel.com",
     },
+    ,
     {
-        src: "/assets/img/logo/LOGO WEDDING-NOIR.png",
-        title: "THEPLUG WEDDING",
-        href: "https://theplug-wedding.com/",
-        linkText: "www.theplug-wedding.com",
+        src: "/assets/img/logo/DFIT LOGO.png",
+        title: "D-FIT DELIVERY",
+        href: "https://www.instagram.com/d_fit_delivery/",
+        linkText: "www.instagram.com/d_fit_delivery"
     },
     {
-        src: "/assets/img/logo/Logo-SoPlus-Dunkel.webp",
-        title: "SoPlus",
-        href: "https://soplusline.com/",
-        linkText: "www.soplusline.com",
-    },
-    {
-        src: "/assets/img/logo/Wifor-Logo.png",
-        title: "Wifor",
-        href: "https://www.wifor.com/en/",
-        linkText: "www.wifor.com/en/",
+        src: "/assets/img/logo/SAB.png",
+        title: "SAB CAMEROUN",
+        href: "https://www.instagram.com/sab_cameroun/",
+        linkText: "www.instagram.com/sab_cameroun"
     }
 ]
 

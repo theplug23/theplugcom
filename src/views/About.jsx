@@ -7,7 +7,7 @@ import HeaderNormal from "../components/header/HeaderNormal";
 import BoxRight from "../components/box-right/BoxRight";
 import TitleSection from "../components/heading/TitleSection";
 import ServiceTow from "../components/services/ServiceTow";
-// import Team from "../components/team/Team";
+import Team from "../components/team/Team";
 // import BrandClient from "../components/brand-client/BrandClient";
 import NextPage from "../components/next/NextPage";
 import Footer from "../components/footer/Footer";
@@ -95,14 +95,14 @@ function About() {
       {/*End Service Section*/}
 
       {/*Start Team*/}
-      {/* <section className="section-margin background-section section-padding">
+      <section className="section-margin background-section section-padding">
         <Container className="dsn-right-container">
-          <TitleSection description="Notre Equipe">
-            La meilleure equipe de toujours
+          <TitleSection description={t("Notre Equipe")}>
+            {t("La meilleure equipe qui soit")}
           </TitleSection>
           <Team loop grabCursor />
         </Container>
-      </section> */}
+      </section>
       {/*End Team*/}
 
       {/*Start Service Section*/}

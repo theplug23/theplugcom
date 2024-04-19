@@ -1,11 +1,12 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next';
 import './style.scss'
 import MetaPost from "../header/MetaPost";
 import NavLink from "../button/NavLink";
 import { Button } from 'react-bootstrap';
 
-function BlogItem({id, image, category, title, description, href}) {
+function BlogItem({id, image, category, title, author, href}) {
+    const { t } = useTranslation("common")
 
     return (
         <div className="blog-item">
@@ -17,12 +18,12 @@ function BlogItem({id, image, category, title, description, href}) {
                 {title && <h4 className='title-block'>
                     <NavLink to={href} style= {{color: '#b99226'}}>{title}</NavLink>
                 </h4>}
-                {description && <p className="mt-15">{description}</p>}
+                {author && <p className="mt-15">{author}</p>}
                 <Button 
-                    href={`/blog/${title}`} 
+                    href={`${href}`} 
                     style= {{color: '#b99226', marginTop: '15px', textDecoration: 'underline'}}
                 >
-                    Read More
+                    {t("Voir plus")}
                 </Button>
             </div>
         </div>
