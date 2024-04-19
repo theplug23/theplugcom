@@ -25,3 +25,8 @@ export function longueurTexte(word) {
 
     return sentence.substring(0, 100); 
 }
+
+export function displayWords(str, numWords) {
+    const words = str.split(' ');
+    return words.slice(0, numWords).join(' ') + '...';
+}

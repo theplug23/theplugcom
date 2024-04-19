@@ -46,6 +46,11 @@ function Footer({className, ...restProps}) {
                         </div>
                     </DsnGrid>
                 </div>
+                <div style={{ textAlign: 'center', marginBottom: 40}}>
+                    <p>
+                        Hochzeitsfotograf Darmstadt | Hochzeitsvideograf Darmstadt | Hochzeitsfotograf Frankfurt | Hochzeitsvideograf Frankfurt | Hochzeitsfotograf Rüsselsheim | Hochzeitsvideograf Rüsselsheim | Hochzeitsfotograf Mainz | Hochzeitsvideograf Mainz | Hochzeitsfotograf Wiesbaden | Hochzeitsvideograf Wiesbaden | Hochzeitsfotograf Hanau | Hochzeitsvideograf Hanau | Hochzeitsfotograf Langen | Hochzeitsvideograf Langen | Hochzeitsfotograf Neu-Isenburg | Hochzeitsvideograf Neu-Isenburg | Hochzeitsfotograf Dietzenbach | Hochzeitsvideograf Dietzenbach | Hochzeitsfotograf Heidelberg | Hochzeitsvideograf Heidelberg | Hochzeitsfotograf Mannheim | Hochzeitsvideograf Mannheim | Hochzeitsfotograf Bensheim | Hochzeitsvideograf Bensheim | Hochzeitsfotograf Dieburg | Hochzeitsvideograf Dieburg | Hochzeitsfotograf Rodgau | Hochzeitsvideograf Rodgau | Hochzeitsfotograf Worms | Hochzeitsvideograf Worms | Hochzeitsfotograf Maintal | Hochzeitsvideograf Maintal | Hochzeitsfotograf Weiterstadt | Hochzeitsvideograf Weiterstadt | Hochzeitsfotograf Bad Homburg | Hochzeitsvideograf Bad Homburg | Hochzeitsfotograf Friedberg | Hochzeitsvideograf Friedberg | Hochzeitsfotograf Gießen | Hochzeitsvideograf Gießen | Hochzeitsfotograf Oberursel | Hochzeitsvideograf Oberursel | Hochzeitsfotograf Taunusstein | Hochzeitsvideograf Taunusstein | Hochzeitsfotograf Königstein im Taunus | Hochzeitsvideograf Königstein am Taunus | Hochzeitsfotograf Weinheim | Hochzeitsvideograf Weinheim | Hochzeitsfotograf Bruchsal | Hochzeitsvideograf Bruchsal | Hochzeitsfotograf Karlsruhe | Hochzeitsvideograf Karlsruhe | Hochzeitsfotograf Heilbronn | Hochzeitsvideograf Heilbronn | Hochzeitsfotograf Bad Dürkheim | Hochzeitsvideograf Bad Dürkheim | Hochzeitsfotograf Speyer | Hochzeitsvideograf Speyer
+                    </p>
+                </div>
                 <Copyright className="pt-40 pb-40"/>
             </Container>
         </footer>

@@ -6,6 +6,7 @@ import HeaderNormal from '../components/header/HeaderNormal';
 import { Container } from 'react-bootstrap';
 import TitleSection from '../components/heading/TitleSection';
 import PrivacyPolicyContainer from '../components/PrivacyPolicyContainer';
+import Footer from '../components/footer/Footer';
 
 function ProtectionData() {
     const {t} = useTranslation("common")
@@ -32,6 +33,8 @@ function ProtectionData() {
                 <TitleSection description={t("Politique de confidentialité")} />
                 <PrivacyPolicyContainer className="section-margin" />
             </Container>
+
+            <Footer />
         </React.Fragment>
     )
 }

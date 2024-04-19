@@ -16,8 +16,9 @@ export const ProductionVideo = () => {
             hitType: 'pageview',
             page: window.location.pathname,
             title: "PRODUCTION VIDEO PAGE"
-        }) 
-    })
+        })
+        
+    }, [])
 
     return (
         <React.Fragment>
