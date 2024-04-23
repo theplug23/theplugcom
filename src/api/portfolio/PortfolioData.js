@@ -1,12 +1,5 @@
-import TimeTagWatch from "../../views/portfolio/TimeTagWatch";
 import UnderArmour from "../../views/portfolio/UnderArmour";
-import ReStyling from "../../views/portfolio/ReStyling";
 import ToastReel from "../../views/portfolio/ToastReel";
-import WhatIfGold from "../../views/portfolio/WhatIfGold";
-import NileKabutha from "../../views/portfolio/NileKabutha";
-import SleepWalker from "../../views/portfolio/SleepWalker";
-import NovaraConic from "../../views/portfolio/NovaraConic";
-import BastianBux from "../../views/portfolio/BastianBux";
 
 const data = [
     {
@@ -61,7 +54,7 @@ const data = [
         date: "07-15-2023",
         href: "https://theplug-wedding.com",
         video: {
-            poster: '/assets/video/theplug wedding website.mp4',
+            poster: '/assets/img/logo/LOGO WEDDING-NOIR.png',
             loop: true
         },
         bgVid: '/assets/img/project/Play icon.png',
@@ -101,6 +94,7 @@ const data = [
         bgVid: '/assets/img/project/Play icon.png',
         images: [
             "/assets/video/PULSE LIVE_Website presentation-.mp4",
+            '/assets/img/logo/PULSELIVE.png',
             "/assets/img/project/Pulse Live/pulselive-Website.jpg",
             "/assets/img/project/Pulse Live/pulselive-Website-1.jpg",
             "/assets/img/project/Pulse Live/compound-slider.jpg"
@@ -134,6 +128,8 @@ const data = [
             "/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-1.jpg",
             "/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-2.jpg",
             "/assets/img/project/Cake By Maman2noemi/Cake-by-maman2noemi-website.jpg",
+            "/assets/img/project/Cake By Maman2noemi/Maman2noemi 1-100.jpg",
+            "/assets/img/project/Cake By Maman2noemi/Maman2noemi 2-100.jpg",
             "/assets/img/project/Cake By Maman2noemi/412_400 2.jpg",
             "/assets/img/project/Cake By Maman2noemi/412_400.jpg",
             "/assets/img/project/Cake By Maman2noemi/633_950 3.jpg",
@@ -311,6 +307,8 @@ const data = [
             '/assets/video/EPIDEAA animation logo final.mp4',
             '/assets/img/project/Epideaa/EPIDEAA LOGO OFFICIAL_PP.jpg',
             '/assets/img/project/Epideaa/EPIDEAA-website.jpg',
+            '/assets/img/project/Epideaa/epideaa 1-100.jpg',
+            '/assets/img/project/Epideaa/epideaa 2-100.jpg',
             '/assets/img/project/Epideaa/epideaa_brochure.jpg',
             '/assets/img/project/Epideaa/ROLL-UP-Epideaa.jpg',
             '/assets/img/project/Epideaa/VISIT-CARD-EPIDEAA.jpg',
