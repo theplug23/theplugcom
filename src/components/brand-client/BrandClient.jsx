@@ -89,10 +89,9 @@ const BrandDetails = [
     {
         src: "/assets/img/logo/ALVI LOGO.png",
         title: "ALVI 7 HOTEL",
-        href: "https://alvihotel.com/",
+        href: "https://alvi7hotel.com/",
         linkText: "www.alvi7hotel.com",
     },
-    ,
     {
         src: "/assets/img/logo/DFIT LOGO.png",
         title: "D-FIT DELIVERY",

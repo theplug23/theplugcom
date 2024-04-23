@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import HeaderDefault from "../../components/header/HeaderDefault";
-
+import { Helmet } from 'react-helmet';
 import DsnGrid from "../../components/DsnGrid";
 import {Container} from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,8 @@ import Footer from "../../components/footer/Footer";
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { dateParserTime } from '../../utils';
+import ReactGA from 'react-ga4';
+
 
 function BlogDetails({props}) {
     const {t} = useTranslation("common")
@@ -20,8 +22,14 @@ function BlogDetails({props}) {
 
     useEffect(() => {
         axios.get('https://api.comtheplug.com/api/posts/' + params.title)
-        .then(res => setPost(res.data))
-        
+        .then(res => {
+            setPost(res.data)
+            ReactGA.event({
+                hitType: 'pageview',
+                page: window.location.pathname,
+                title: `BLOG : ${res.data.title}`
+            })
+        })
     }, [])
 
     const heroContent = {
@@ -33,7 +41,13 @@ function BlogDetails({props}) {
     }
 
     return (
-        <>
+        <React.Fragment>
+            <Helmet>
+                <meta property="og:title" content={`${heroContent.title}`} />
+                <meta property="og:description" content={`Description du blog : ${heroContent.title}`} />
+                <meta property="og:image" content={`${heroContent.src}`} />
+                <title>{`${heroContent.title}`} - THEPLUG COM'</title>
+            </Helmet>
 
             <HeaderDefault heroContent={heroContent}
                 parallax={{yPercent: 30}}
@@ -64,7 +78,7 @@ function BlogDetails({props}) {
             </NextPage>
             <Footer/>
 
-        </>
+        </React.Fragment>
 
 
     );
