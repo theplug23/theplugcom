@@ -5,6 +5,7 @@
     "Accueil":"Home",
     "À propos":"About Us",
     "Réalisations":"Portfolio",
+    "Nos Réalisations":"Our PORTFOLIO",
     "Services":"Services",
     "Notre Equipe":"Our Team",
     "Designé par":"Designed By",
@@ -34,10 +35,8 @@
     "VOTRE MESSAGE :":"Your  Message :",
     "Parlez-nous de vous et de votre projet":"Tell us about yourself and your project",
     "ENVOYER UN MESSAGE":"SEND MESSAGE",
-    "RÉALISATIONS":"PROJECTS",
     "VOIR PLUS DE TRAVAUX":"SEE MORE PROJECTS",
     "Voir Plus":"See More",
-    "Nos derniÈres réalisations":"Our latest creations",
     "Êtes-Vous satisfaits ?":"ARE YOU SATISFIED?",
     "contactez-nous directement en cliquant ici !":"Contact us directly by clicking here!",
     "Tout":"All",
@@ -221,7 +220,7 @@
     "Notre Production Vidéo": "Our Video Production",
     "Nos dernières réalisations": "Our latest projects",
     "Projets vidéo réalisés": "Completed video projects",
-    "Mentions légales": "Terms of use",
+    "Mentions légales": "Impressum",
     "Protection de données": "Data protection",
     "Politique de confidentialité": "Privacy policy"
 }

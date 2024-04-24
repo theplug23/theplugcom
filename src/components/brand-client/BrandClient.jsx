@@ -57,7 +57,7 @@ const BrandDetails = [
         linkText: "www.mb-creation.com",
     },
     {
-        src: "/assets/img/logo/PLUSELIVE.png",
+        src: "/assets/img/logo/PULSELIVE.png",
         title: "PULSE LIVE",
         href: "https://pulse-live.de/",
         linkText: "www.pulse-live.de",

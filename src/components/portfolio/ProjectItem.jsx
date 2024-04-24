@@ -44,7 +44,6 @@ const ProjectItem = ({ portoDetails, textButton, imageOnly, className ,isHome}) 
     return (
         <a href={portoDetails.src} className={dsnCN("portfolio-item text-center v-dark-head", className)}
           ref={ref}>
-          <img src={portoDetails.src} style={{display:"none"}} />
           <div className="inner-img">
             <BgImage
               className={"dsn-swiper-parallax-transform"}
