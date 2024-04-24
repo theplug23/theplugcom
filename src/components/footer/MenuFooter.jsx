@@ -8,10 +8,10 @@ function MenuFooter({className, ...restProps}) {
     const {t} = useTranslation("common")
     const paginate = [
         {link: "/about", title: "À propos"},
-        {link: "/portfolio", title: "Nos Réalisations"},
-        {link: "/services", title: "Nos Services"},
-        {link: "/meet-the-team", title: "Notre Equipe"},
-        // {link: "/blog-details", title: "News"},
+        {link: "/services", title: "Services"},
+        {link: "/portfolio", title: "Réalisations"},
+        {link: "/production-video", title: "Production Vidéo"},
+        {link: "/blog", title: "Blog"},
         {link: "/contact", title: "Contacts"}
     ];
     return (

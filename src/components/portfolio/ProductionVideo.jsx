@@ -35,20 +35,6 @@ export const ProductionVideo = () => {
                 <ProductionVideoList />
             </Container>
 
-            {/* <DsnGrid>
-                <div className="p-relative v-dark-head text-center">
-                    <ParallaxImage src="/assets/img/project/Wifor/Bild-2.jpg" overlay={4}/>
-                    <Container className="v-middle z-index-1">
-                        <ButtonPopup href="https://youtu.be/SzNp8ED68uM"/>
-                    </Container>
-                </div>
-                <div className="p-relative v-dark-head text-center">
-                    <ParallaxImage src="/assets/img/project/Epideaa/ROLL-UP-Epideaa.jpg" overlay={4}/>
-                    <Container className="v-middle z-index-1">
-                        <ButtonPopup href="https://youtu.be/SzNp8ED68uM"/>
-                    </Container>
-                </div>
-            </DsnGrid> */}
             <br /><br />
             <Footer/>
         </React.Fragment>

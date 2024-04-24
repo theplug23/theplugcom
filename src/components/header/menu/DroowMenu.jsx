@@ -62,11 +62,10 @@ const menuContent = [
     // },
     {name: "Accueil", to: "/"},
     {name: "À propos", to: "/about"},
-    {name: "Nos Services", to: "/services"},
-    {name: "Nos Réalisations", to: "/portfolio"},
-    {name: "Notre Production Vidéo", to: "/production-video"},
-    {name: "Notre Blog", to: "/blog"},
-    //{name: "Notre Equipe", to: "/meet-the-team"},
+    {name: "Services", to: "/services"},
+    {name: "Réalisations", to: "/portfolio"},
+    {name: "Production Vidéo", to: "/production-video"},
+    {name: "Blog", to: "/blog"},
     {name: "Contacts", to: "/contact"}
 ];
 

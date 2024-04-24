@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import BgImage from "../header/BgImage";
 import { dsnCN } from "../../hooks/helper";
 import { useTranslation } from 'react-i18next'
@@ -50,14 +50,14 @@ function ProductionVideoItem({portoDetails, imageOnly, className}) {
                     video={portoDetails.video}
                     alt={portoDetails.title}
                     overlay={portoDetails.overlay}
-                    height={500}
+                    height={400}
                     imageOnly={imageOnly}
                 />
             </div>
           
-            <div className="info-text">
-                <h4 className="title-block" style={{ textAlign: 'left', fontSize: 15 }}>{t(displayWords(portoDetails.title, 5))}</h4>
-                <p style={{ textAlign: 'left', fontSize: 12 }}>{displayWords(portoDetails.description, 20)}</p>
+            <div className="info-text" style={{ marginTop: '-100px'}}>
+                <h4 className="title-block" style={{ textAlign: 'left', fontSize: 15 }}>{portoDetails.title}</h4>
+                <p style={{ textAlign: 'left', fontSize: 12 }}>{portoDetails.description}</p>
             </div>
         </a>
     )
