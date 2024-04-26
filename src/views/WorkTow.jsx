@@ -10,7 +10,6 @@ import {Helmet} from "react-helmet";
 import { useTranslation } from 'react-i18next';
 import ReactGA from "react-ga4";
 import TitleSection from "../components/heading/TitleSection";
-import PortfolioSwiper from "../components/portfolio/PortfolioSwiper";
 import PortfolioProjectList from '../components/portfolio/PortfolioProjectList';
 
 function WorkTow(props) {

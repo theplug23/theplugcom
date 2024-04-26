@@ -81,8 +81,6 @@ const Router = () => {
                 </Routes>
             </Suspense>
         </div>
-
-
     );
 }
 

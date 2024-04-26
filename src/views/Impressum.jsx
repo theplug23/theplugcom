@@ -29,10 +29,11 @@ function Impressum() {
                 {t("Mentions légales")} 
             </HeaderNormal>
 
-            <Container className="section-margin">
-                <TitleSection description={t("Mentions légales")} />
-                <ImpressumContainer className="section-margin" />
+            <Container as={TitleSection} description={t("Mentions légales")} className="mt-section">
+                {t("Mentions légales")}
             </Container>
+
+            <ImpressumContainer className="section-margin" />
 
             <Footer />
         </React.Fragment>

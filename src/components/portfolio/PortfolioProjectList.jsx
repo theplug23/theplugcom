@@ -27,15 +27,15 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
 
     useEffect(() => {
         const screenWidth = window.screen.width
-        console.log(screenWidth)
+        //console.log(screenWidth)
         if (screenWidth > 800) {
             setColValue(4)
-        } else if (screenWidth  <= 800 && screenWidth > 420) {
+        } else if (screenWidth  <= 800 && screenWidth > 430) {
            setColValue(6)
         } else {
             setColValue(12)
         }
-    })
+    }, [])
 
     return (
         <section className='mb-section'>

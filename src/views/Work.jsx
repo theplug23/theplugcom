@@ -16,10 +16,10 @@ function Work(props) {
             <HeaderNormalTow description="Our Work">portfolio</HeaderNormalTow>
             <Container>
                 <PortfolioClassic col={2}
-                                  colGap={50}
-                                  colGapTablet={30}
-                                  rowGap={50}
-                                  rowGapTablet={30}
+                    colGap={50}
+                    colGapTablet={30}
+                    rowGap={50}
+                    rowGapTablet={30}
                 />
             </Container>
 
