@@ -13,7 +13,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/Y9mjsPi7UDk",
-            description: "Montage vidéo représetant la compilation de tous les projets vidéo réalisés par Theplug",
+            description: "Video montage representing a compilation of all the video projects produced by Theplug 2023",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 9.jpg',
@@ -27,7 +27,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/SzNp8ED68uM",
-            description: "Couverture photo et vidéo de l'entreprise WifOR Institute à l'occasion de leur 15 ans",
+            description: "Photo and video coverage of the 15th anniversary of WifOR Institute",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 2.jpg',
@@ -36,11 +36,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 3,
-            title: "NULLDREI-Documentaire",
+            title: "NULLDREI-Documentary",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/WOAzN_oYPG0",
-            description: "",
+            description: "Production of a documentary by the artist NULLDREI sponsored by the brand Pegasus PRO",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 5.jpg',
@@ -49,11 +49,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 4,
-            title: "ImageFilm - SoPlus Line 30.08.2023",
+            title: "ImageFilm - SoPlus Line GmbH",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/YgT_nYhYXEE",
-            description: "",
+            description: "Production of the advertising video for SoPlus Line GmbH",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 4.jpg',
@@ -62,11 +62,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 5,
-            title: "Découvrez les Maldives avec Epideaa",
+            title: "Discover the Maldives with Epideaa",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/x-u_3hwtSww",
-            description: "Création d'un concept et d'une identité de marque. Photographie et vidéographie",
+            description: "Creation of a concept and brand identity. Photography and videography",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 8.jpg',
@@ -75,11 +75,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 6,
-            title: "Spot publicitaire Theplug Communication 2023",
+            title: "Theplug Communication 2023 advertising spot",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/UNTZ52GUkFM",
-            description: "Montage vidéo du spot publicitaire de l'entreprise Theplug",
+            description: "Video montage of Theplug advertising spot",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette.jpg',
@@ -88,11 +88,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 7,
-            title: "Spot publicitaire de l'entreprise Finex",
+            title: "Finex advertising spot",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/Gr5jwbfhV6E",
-            description: "Réalisation du sport publicitaire de l'entreprise gabonaise de transport de produits pétroliers FInex",
+            description: "Production of an advertising spot for the Gabonese petroleum products transport company Finex",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 3.jpg',
@@ -114,11 +114,11 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 9,
-            title: "CAMPAGNE 8 MARS",
+            title: "8 MARCH CAMPAIGN",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/cEqwN3h95Jw",
-            description: "Réalisation de l'interview d'une jeune étudiante lors de la journée internationale de la femme 2024",
+            description: "Interview with a young student on International Women's Day 2024",
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette 6.jpg',

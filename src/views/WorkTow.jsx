@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next';
 import ReactGA from "react-ga4";
 import TitleSection from "../components/heading/TitleSection";
 import PortfolioSwiper from "../components/portfolio/PortfolioSwiper";
+import PortfolioProjectList from '../components/portfolio/PortfolioProjectList';
 
 function WorkTow(props) {
     const {t} = useTranslation("common")
@@ -34,7 +35,13 @@ function WorkTow(props) {
             <Container as={TitleSection} description={t("Nos Réalisations")} className="mt-section">
                 {t("Projets réalisés")}
             </Container>
-            <PortfolioSwiper className="mb-section" grabCursor autoplay={{ delay: 3000 }} loop={true} />
+            {/* <PortfolioSwiper 
+                className="mb-section" 
+                grabCursor 
+                autoplay={{ delay: 3000 }} 
+                loop={true} 
+            /> */}
+            <PortfolioProjectList />
             <Container fluid className="mt-section">
                 <PortfolioClassic col={3}
                     colGap={50}

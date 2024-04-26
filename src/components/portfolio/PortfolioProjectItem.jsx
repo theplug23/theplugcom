@@ -10,8 +10,10 @@ import "lightgallery/css/lg-thumbnail.css";
 // If you want you can use SCSS instead of css
 import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
+import { displayWords } from "../../utils";
 
-function ProductionVideoItem({portoDetails, imageOnly, className}) {
+
+function PortfolioProjectItem({portoDetails, imageOnly, className}) {
     const {t} = useTranslation("common")
     const ref = useRef();
 
@@ -37,12 +39,12 @@ function ProductionVideoItem({portoDetails, imageOnly, className}) {
 
     return (
         <a 
-            href={portoDetails.src} 
+            href={`portfolio/${portoDetails.src}`}
             className={dsnCN("portfolio-item text-center v-dark-head", className)}
             ref={ref}
             style={{ marginBottom: 80 }}
         >
-            <div className="inner-img" style={{ height: 350}}>
+            <div className="inner-img" style={{ height: 400}}>
                 <BgImage
                     className={"dsn-swiper-parallax-transform"}
                     src={portoDetails.src}
@@ -56,10 +58,10 @@ function ProductionVideoItem({portoDetails, imageOnly, className}) {
           
             <div className="info-text" style={{ marginTop: '-100px'}}>
                 <h4 className="title-block" style={{ textAlign: 'left', fontSize: 15 }}>{portoDetails.title}</h4>
-                <p style={{ textAlign: 'left', fontSize: 14 }}>{portoDetails.description}</p>
+                <p style={{ textAlign: 'left', fontSize: 12 }}>{displayWords(portoDetails.description[0], 50)}</p>
             </div>
         </a>
     )
 }
 
-export default React.memo(ProductionVideoItem);
+export default React.memo(PortfolioProjectItem);
