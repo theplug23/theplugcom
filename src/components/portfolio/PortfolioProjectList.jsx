@@ -13,9 +13,6 @@ import BgImage from '../header/BgImage';
 function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
     const {t} = useTranslation("common")  
     const dataPortfolio = getPortfolioData();
-    const iso = useRef();
-    const [filter, setFilter] = useState("*");
-    const refIsotope = useRef();
     const category = new Set();
     dataPortfolio.map((p) => {
     return typeof p.category === "object"
