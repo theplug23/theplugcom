@@ -64,7 +64,8 @@ const menuContent = [
     {name: "À propos", to: "/about"},
     {name: "Services", to: "/services"},
     {name: "Réalisations", to: "/portfolio"},
-    {name: "Production Vidéo", to: "/production-video"},
+    {name: "Production Vidéo", to: "/video-production"},
+    {name: "Production Web Design", to: "/webdesign-production"},
     {name: "Blog", to: "/blog"},
     {name: "Contacts", to: "/contact"}
 ];

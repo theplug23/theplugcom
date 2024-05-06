@@ -7,6 +7,7 @@ import './style.scss';
 import NotFound from "../views/404";
 import { ProductionVideo } from "../components/portfolio/ProductionVideo";
 import ProtectionData from "../views/ProtectionData";
+import PortfolioWebDesign from "../components/portfolio/PortfolioWebDesign";
 
 const Scrollbar = React.lazy(() => import("smooth-scrollbar"));
 
@@ -74,7 +75,8 @@ const Router = () => {
                     <Route exact path="/contact" element={<Contact/>}/>
                     <Route exact path="/blog" element={<Blogs />}></Route>
                     <Route exact path="/blog/:title" element={<BlogDetails/>}/>
-                    <Route exact path="/production-video" element={<ProductionVideo />} />
+                    <Route exact path="/video-production" element={<ProductionVideo />} />
+                    <Route exact path="/webdesign-production" element={<PortfolioWebDesign />} />
                     <Route exact path="/impressum" element={<Impressum />} />
                     <Route exact path="/protection-data" element={<ProtectionData />} />
                     <Route exact path="*" element={<NotFound />}/>
