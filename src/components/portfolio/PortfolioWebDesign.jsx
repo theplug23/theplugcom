@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import TitleSection from "../heading/TitleSection";
 import Footer from "../footer/Footer";
 import WebDesignList from "./WebDesignList";
+import ReactGA from "react-ga4";
+
 
 const PortfolioWebDesign = () => {
     const [projects, setProjects] = useState([])
@@ -16,6 +18,12 @@ const PortfolioWebDesign = () => {
         const projects = getPortfolioData();
         const filteredProjects = projects.filter(p => p.category.includes('Web Design'))
         setProjects(filteredProjects)
+
+        ReactGA.event({
+            hitType: 'pageview',
+            page: window.location.pathname,
+            title: "PRODUCTION WEB DESIGN PAGE"
+        })
     }, [])
 
     return (
