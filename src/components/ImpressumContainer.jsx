@@ -20,7 +20,7 @@ function ImpressumContainer({...restProps}) {
                             <h4 style={{fontWeight: "bold", fontFamily:"Montserrat"}}>Streitschlichtung in der EU</h4>
                             <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target='_blank'>https://ec.europa.eu/consumers/odr/</a>.</p>
                             <p>Die E-Mail-Adresse finden Sie oben im Impressum.</p><br/>
-                            <h4 style={{fontWeight: "bold", fontFamily:"Montserrat"}}>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h4>
+                            <h4 style={{fontWeight: "bold", fontFamily:"Montserrat"}}>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h4>
                             <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
                             <p>Quelle: eRecht24</p>
                         </div>
