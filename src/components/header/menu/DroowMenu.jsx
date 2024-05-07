@@ -65,9 +65,9 @@ const menuContent = [
     {name: "Services", to: "/services"},
     {name: "Réalisations", to: "/portfolio"},
     {name: "Production Vidéo", to: "/video-production"},
-    {name: "Production Web Design", to: "/webdesign-production"},
+    {name: "Web Design", to: "/webdesign-production"},
     {name: "Blog", to: "/blog"},
-    {name: "Contacts", to: "/contact"}
+    {name: "Contact", to: "/contact"}
 ];
 
 const DroowMenu = ({hamburger}) => {
