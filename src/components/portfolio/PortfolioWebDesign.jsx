@@ -22,7 +22,7 @@ const PortfolioWebDesign = () => {
         ReactGA.event({
             hitType: 'pageview',
             page: window.location.pathname,
-            title: "PRODUCTION WEB DESIGN PAGE"
+            title: "WEB DESIGN PAGE"
         })
     }, [])
 
