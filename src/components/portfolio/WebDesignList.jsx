@@ -29,12 +29,7 @@ const WebDesignList = ({projects}) => {
                             <Col xs={colValue} key={index} className='portfolio-item' style={{marginBottom: '20px'}}>
                                 <a href={`portfolio/${item.slug}`}>
                                     <div className="inner-img">
-                                        {(item.isvideo) ?
-                                        <video className="cover-bg-video" preload="none" autoPlay muted playsInline >
-                                            <source src={item.video.poster} type="video/mp4"/>
-                                        </video> :
-                                        <LazyImg className="cover-bg-video" src={item.src} alt={item.title}/>
-                                        }
+                                        <LazyImg className="cover-bg-video" src={item.srcSlider} alt={item.title}/>
                                     </div>
                                     <div className="box-content background-section">
                                         {item.title && <h4 className='title-block' style={{ margin: '15px 0px'}}>

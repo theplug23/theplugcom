@@ -53,13 +53,11 @@ const ToastReel = ({data}) => {
                 </TextTrigger>
                 <FadeUpTrigger>
                     {(ref) => <>
-                        {data.description.map((desc, i) => (   
-                            <p className="mt-20" key={i} ref={ref}>
-                                {t(desc)}
-                            </p>
+                        {data.description.map((desc, i) => (
+                            <p key={i} className='mt-20'>{t(desc)}</p>
                         ))}
                         
-                        <ul className="mt-20 color-heading">
+                        <ul className="mt-50 color-heading">
                             <li ref={ref}>{t("Art Direction")} : {data.info.direction}</li>
                             {data.info?.design && <li className="mt-1" ref={ref}>{t("Web Design")} : {data.info?.design}</li>}
                             {data.info?.music && <li className="mt-1" ref={ref}>{t("Musique")} : {data.info?.music}</li>}

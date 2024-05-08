@@ -65,9 +65,9 @@ const menuContent = [
     {name: "Services", to: "/services"},
     {name: "Réalisations", to: "/portfolio"},
     {name: "Production Vidéo", to: "/video-production"},
-    {name: "Production Web Design", to: "/webdesign-production"},
+    {name: "Web Design", to: "/webdesign-production"},
     {name: "Blog", to: "/blog"},
-    {name: "Contacts", to: "/contact"}
+    {name: "Contact", to: "/contact"}
 ];
 
 const DroowMenu = ({hamburger}) => {
@@ -79,7 +79,7 @@ const DroowMenu = ({hamburger}) => {
         $key++;
         if (items.dropdownMenu) {
             return (<Nav.Dropdown name={items.name}
-                                  key={$key}>{items.dropdownMenu.map(item => getSubMenu(item))}</Nav.Dropdown>);
+                                key={$key}>{items.dropdownMenu.map(item => getSubMenu(item))}</Nav.Dropdown>);
         }
         return (
             <Nav.Link to={items.to} key={$key}>{t(items.name)}</Nav.Link>
