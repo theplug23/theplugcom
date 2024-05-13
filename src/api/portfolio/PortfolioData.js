@@ -4,6 +4,100 @@ import ToastReel from "../../views/portfolio/ToastReel";
 const data = [
     {
         id: 1,
+        title: "Podcast WithOrWithout",
+        slug: 'Braydon Manu: Der Profifußballer, der Talent auf dem Spielfeld und den Glauben an Christus vereint',
+        src: '/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4',
+        srcSlider: '/assets/img/project/WithOrWithout/With or without logo.jpg',
+        category: ['Graphisme', 'Vidéographie', 'Photographie'],
+        description: [
+            {
+                isTitle: true,
+                text: "Braydon Manu : Le Footballeur Professionnel Qui Combine Talent sur le Terrain et Foi en Christ"
+            },
+            "En tant que joueur de football professionnel pour SV Darmstadt 98, Braydon Manu est bien connu pour son talent sur le terrain. Mais ce qui le distingue vraiment, c'est son engagement profond envers sa foi en Christ, une dimension importante de sa vie qui se reflète également dans ses projets hors du terrain. Avec son récent podcast 'With or Without', Manu offre une perspective unique sur la vie d'un athlète de haut niveau et sur la façon dont la foi guide ses choix et ses actions.",
+            {
+                isTitle: true,
+                text: "La Carrière de Braydon Manu : Talent et Dévouement"
+            },
+            "Né le 28 mars 1997 à Hambourg, en Allemagne, MANU Braydon Marvin est un footballeur professionnel allemand qui évolue habituellement en tant que milieu de terrain au sein du club de Bundesliga Darmstadt 98. Grâce à son talent et à sa détermination, Manu a commencé sa carrière de footballeur en rejoignant le club de Bunseliga Hallescher FC pour la saison 2017-2019. Grâce à son travail acharné et à ses performances exceptionnelles sur le terrain, il a capté l'attention de beaucoup et s'est hissé au sommet de sa carrière. Cela lui vaut une place au SV Darmstadt 98, annoncée pour juin 2019, où il se fera les dents en tant que joueur professionnel. Enfin, en janvier 2021, il rejoint le Hallescher FC sous forme de prêt pour le reste de la saison 2020-2021. Attaché à ses origines, le jeune homme a exprimé sa fierté d'être appelé en équipe nationale senior du Ghana pour défendre les couleurs de son pays natal. Il a assuré sa place dans les matchs de l'équipe nationale pour les éliminatoires de la Coupe du monde 2022.",
+            {
+                isTitle: true,
+                text: "La Foi en Christ : Une Force Motrice"
+            },
+            "Pour Braydon Manu, sa foi en Christ est au cœur de tout ce qu'il fait. En tant que chrétien dévoué, il trouve la force et l'inspiration dans sa relation avec Dieu, ce qui se reflète dans son comportement sur et en dehors du terrain. Sa foi lui donne une perspective unique sur la vie et le sport, l'aidant à surmonter les défis et à rester concentré sur ses objectifs.",
+            {
+                isTitle: true,
+                text: "Le Podcast 'With or Without' : Une Exploration de la Foi, du Sport et de la Vie"
+            },
+            "Dans son podcast 'With or Without', Braydon Manu invite ses auditeurs à plonger dans son monde, partageant des réflexions personnelles sur sa foi, son parcours en tant que footballeur professionnel et les défis qu'il a rencontrés en cours de route. Avec des épisodes captivants et des invités spéciaux, le podcast offre une occasion unique d'entendre directement de la part de Manu sur des sujets qui lui tiennent à cœur.",
+            {
+                isTitle: true,
+                text: "La Collaboration Avec Notre Agence : Créativité et Innovation"
+            },
+            "En tant qu'agence de communication créative, nous avons eu le privilège de collaborer avec Braydon Manu sur son projet de podcast « With or Without ». De la création du logo et de l'identité visuelle à la production des épisodes et aux séances photos, notre équipe a travaillé en étroite collaboration avec Manu pour donner vie à sa vision. Cette collaboration a été une expérience enrichissante, qui nous a permis de combiner nos compétences créatives avec la passion et la détermination de Manu, pour aboutir à un produit final dont nous sommes tous fiers.",
+            {
+                isTitle: true,
+                text: "Inspirer à Travers la Foi et le Sport"
+            },
+            "Braydon Manu incarne l'idée que la foi et le sport ne sont pas mutuellement exclusifs, mais plutôt complémentaires. Son parcours inspirant sur le terrain et son engagement envers sa foi en Christ en font un modèle pour les athlètes et les fans du monde entier. Avec son podcast 'With or Without' et notre collaboration fructueuse, Manu continue de toucher des vies et d'inspirer les autres à poursuivre leurs rêves, peu importe les obstacles."
+        ],
+        overlay: 4,
+        bgVid: '/assets/img/project/Play icon.png',
+        date: "24-04-2024",
+        images: [ 
+            "/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4",
+            "/assets/img/project/WithOrWithout/with or without.jpg",
+            "/assets/img/project/WithOrWithout/With or without logo.jpg",
+            "/assets/img/project/WithOrWithout/with or without 2.jpg"
+        ],
+        component: (props) => <ToastReel {...props}/>,
+        info: {
+            direction: "THEPLUG COM'",
+            client: 'Braydon Manu',
+            design: "THEPLUG COM'",
+            videographie: "Stephane KAMWA"
+        },
+        video: {
+            poster: '/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4',
+            loop: true
+        },
+        isvideo: true
+    },
+    {
+        id: 2,
+        title: "SV Darmstadt 98",
+        slug: 'sv-darmstadt-98',
+        src: '/assets/img/logo/SV_Darmstadt_98_Logo.png',
+        srcSlider: '/assets/img/logo/SV_Darmstadt_98_Logo.png',
+        category: ['Photographie'],
+        description: [],
+        overlay: 3,
+        bgVid: '/assets/img/project/Play icon.png',
+        date: "12-05-2024",
+        images: [ 
+            "https://www.youtube.com/embed/mDK7OuYPnpg?si=_kDK40IhuAFdbrl4",
+            "/assets/img/logo/SV_Darmstadt_98_Logo.png",
+            "/assets/img/project/Darmstadt/Bild.jpg",
+            "/assets/img/project/Darmstadt/Bild-2.jpg",
+            "/assets/img/project/Darmstadt/Bild-3.jpg",
+            "/assets/img/project/Darmstadt/Bild-4.jpg",
+            "/assets/img/project/Darmstadt/Bild-5.jpg",
+            "/assets/img/project/Darmstadt/Bild-6.jpg",
+            "/assets/img/project/Darmstadt/Bild-7.jpg",
+            "/assets/img/project/Darmstadt/Bild-8.jpg",
+            "/assets/img/project/Darmstadt/Bild-9.jpg",
+            "/assets/img/project/Darmstadt/Bild-10.jpg",
+            "/assets/img/project/Darmstadt/Bild-11.jpg",
+            "/assets/img/project/Darmstadt/Bild-12.jpg"
+        ],
+        component: (props) => <ToastReel {...props}/>,
+        info: {
+            direction: "THEPLUG COM'",
+            client: 'SV Darmstadt 98'
+        }
+    },
+    {
+        id: 3,
         title: "WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)",
         title_mini: "WifOR Institute GmbH",
         slug: 'WifOR-Institute-GmbH-feiert-15-jähriges-Jubiläum-im-Merck-Stadion-am-Böllenfalltor(Darmstadt)',
@@ -229,7 +323,7 @@ const data = [
         }
     },
     {
-        id: 2,
+        id: 4,
         title: "SOPLUSLINE",
         slug: 'soplusline',
         src: '/assets/video/FINAL COMP.mp4',
@@ -259,10 +353,11 @@ const data = [
         }
     },
     {
-        id: 3,
+        id: 5,
         title: "EPIDEAA",
         slug: 'epideaa',
         src: '/assets/video/EPIDEAA animation logo final.mp4',
+        srcSlider: "/assets/img/project/Epideaa/EPIDEAA-website.jpg",
         category: ['Web Design', 'Graphisme', 'Photographie', 'Vidéographie'],
         description: [
             "EPIDEAA se présente comme le guide idéal pour des vacances aux Maldives, offrant une exploration des trésors naturels de ce paradis terrestre. En tant qu'expert de renom sur cet archipel, il met à la disposition de sa clientèle des services de conseil, de recommandation et de planification d'activités afin de garantir des expériences mémorables et un séjour inoubliable. Les Maldives occupent actuellement une place de choix parmi les 15 destinations les plus prisées à l'échelle mondiale, bénéficiant d'une notoriété considérable. Face à l'affluence de visiteurs et à la multitude de guides disponibles, il est essentiel pour EPIDEAA de se positionner judicieusement dans ce secteur concurrentiel.",
@@ -301,11 +396,11 @@ const data = [
         }
     },
     {
-        id: 4,
+        id: 6,
         title: "Cake By Maman2Noemi",
         slug: 'cake-by-maman2noemi',
         src: '/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-1.jpg',
-        srcSlider: '/assets/img/project/Cake By Maman2noemi/Cakebymaman2noemi_Mock-up-1.jpg',
+        srcSlider: '/assets/img/project/Cake By Maman2noemi/Cake-by-maman2noemi-website.jpg',
         category: ['Graphisme', 'Photographie', 'Web Design'],
         description: [
             "Etablissement de pâtisserie, spécialisé dans le cake design, Cake by Maman2Noemi conçoit pour chacun de ses clients des gâteaux uniques et personnalisés en fonction des préférences, des thèmes et des occasions particulières, avec des ingrédients choisis de façon très précise et méticuleuse pour un goût et une texture unique.",
@@ -343,7 +438,7 @@ const data = [
         }
     },
     {
-        id: 5,
+        id: 7,
         title: "NHPC",
         slug: 'nhpc',
         category: ["Graphisme"],
@@ -370,11 +465,11 @@ const data = [
         }
     },
     {
-        id: 6,
+        id: 8,
         title: 'THEPLUG WEDDING',
         slug: 'theplug-wedding',
         src: '/assets/img/logo/LOGO WEDDING-NOIR.png',
-        srcSlider: '/assets/img/logo/LOGO WEDDING-NOIR.png',
+        srcSlider: '/assets/img/project/THEPLUG WEDDING/THEPLUG-Wedding-Mock-up.jpg',
         category: ['Graphisme', 'Vidéographie', 'Web Design', 'Photographie'],
         description: [
             "THEPLUG WEDDING est une agence spécialisée dans la capture des moments les plus mémorables des mariages, tant en photographie qu'en vidéo. La mission de l’agence est d'immortaliser les cérémonies officielles qui unissent deux êtres dans la promesse d'un amour et d'une fidélité éternels. Chez THEPLUG WEDDING, l'amour et l'art fusionnent pour exprimer une beauté exceptionnelle.",
@@ -406,7 +501,7 @@ const data = [
         }
     },
     {
-        id: 7,
+        id: 9,
         title: "Epouse Eden",
         slug: 'epouse-eden',
         src: 'https://youtu.be/SeoF3Ei1E_E',
@@ -443,10 +538,11 @@ const data = [
         }
     },
     {
-        id: 8,
+        id: 10,
         title: "Pulse Live",
         slug: 'pulse-live',
         src: '/assets/video/Pulse live animation logo.mp4',
+        srcSlider: "/assets/img/project/Pulse Live/pulselive-Website-1.jpg",
         category: ['Graphisme', 'Vidéographie', 'Web Design'],
         description: [
             "PULSE LIVE ENTERTAINMENT établit en Allemagne, se distingue en tant que société spécialisée dans la planification de tournées, la production de concerts, de festivals et de spectacles. Fondée par des enthousiastes de musique, elle s'engageà promouvoir la scène musicale africaine, en mettant l'accent sur l'Allemagne, tout en visant une présence remarquable à l'échelle européenne et mondiale",
@@ -477,11 +573,12 @@ const data = [
         }
     },
     {
-        id: 9,
+        id: 11,
         title: "Esk Translations UG",
         slug: 'esk-translations-ug',
-        src: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
-        srcSlider: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
+        src: "/assets/img/logo/EsK_Translations.png",
+        srcSlider: "/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg",
+        c: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
         category: ['Graphisme', 'Web Design'],
         description: [
             "ESK TRANSLATIONS UG se positionne en tant qu'agence de traduction offrant des services de qualité exceptionnelle aux entreprises internationales, multinationales, ainsi qu'aux particuliers. Elle veille à ce que ses traductions reflètent parfaitement la vision de ses clients, offrant ainsi une expérience enrichissante, captivante et agréable.",
@@ -506,7 +603,7 @@ const data = [
         }
     },
     {
-        id: 10,
+        id: 12,
         title: "EMD PROD",
         slug: 'emd-prod',
         src: '/assets/img/project/Emd Prod/EMD.jpg',
@@ -533,7 +630,7 @@ const data = [
         }
     },
     {
-        id: 11,
+        id: 13,
         title: "Madhi",
         slug: 'madhi',
         src: '/assets/img/project/Madhi/Madhi-logo_.jpg',

@@ -39,6 +39,7 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
             <Row>
                 {dataPortfolio.map(
                     (item, index) => {
+                        const description = typeof item.description[0] === "object" ? item.description[0].text : item.description[0]
                         return (
                             <Col xs={colValue} key={index} style={{marginBottom: 50}} className='portfolio-item'>
                                 <a href={`portfolio/${item.slug}`}>
@@ -56,7 +57,7 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
                                         {item.title && <h4 className='title-block' style={{ margin: '15px 0px'}}>
                                             <NavLink to={item.href} style= {{color: '#b99226'}}>{item.title}</NavLink>
                                         </h4>}
-                                        <p className="mt-15">{displayWords(t(item.description[0]), 30)}</p>
+                                        <p className="mt-15">{displayWords(t(description), 30)}</p>
                                         <Button 
                                             href={item.href} 
                                             style= {{color: '#b99226', marginTop: '15px', textDecoration: 'underline'}}
