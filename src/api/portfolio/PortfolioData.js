@@ -48,7 +48,13 @@ const data = [
             "/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4",
             "/assets/img/project/WithOrWithout/with or without.jpg",
             "/assets/img/project/WithOrWithout/With or without logo.jpg",
-            "/assets/img/project/WithOrWithout/with or without 2.jpg"
+            "/assets/img/project/WithOrWithout/with or without 2.jpg",
+            "/assets/img/project/WithOrWithout/img-1.jpg",
+            "/assets/img/project/WithOrWithout/img-2.jpg",
+            "/assets/img/project/WithOrWithout/img-3.jpg",
+            "/assets/img/project/WithOrWithout/img-4.jpg",
+            "/assets/img/project/WithOrWithout/img-5.jpg",
+            "/assets/img/project/WithOrWithout/img-6.jpg"
         ],
         component: (props) => <ToastReel {...props}/>,
         info: {

@@ -9,6 +9,18 @@ import LazyImg from "../LazyImg";
 
 const BrandDetails = [
     {
+        src: "/assets/img/logo/SV_Darmstadt_98_Logo.png",
+        title: "SV Darmstadt 98",
+        href: "https://www.sv98.de/",
+        linkText: "www.sv98.de",
+    },
+    {
+        src: "/assets/img/project/WithOrWithout/With or without logo.jpg",
+        title: "Podcast WithOrWithout",
+        href: "https://www.comtheplug.com/portfolio/Braydon%20Manu:%20Der%20Profifu%C3%9Fballer,%20der%20Talent%20auf%20dem%20Spielfeld%20und%20den%20Glauben%20an%20Christus%20vereint",
+        linkText: "WithOrWithout",
+    },
+    {
         src: "/assets/img/logo/EPIDEAA LOGO OFFICIAL_PP.jpg",
         title: "EPIDEAA",
         href: "https://epideaa.com/",
