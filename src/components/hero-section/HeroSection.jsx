@@ -26,7 +26,7 @@ const HeroContent = {
   authorJob: "Photographe professionel",
   experienceNumber: "8",
   experienceDescription: `ANNÉES \n D'EXPÉRIENCE`,
-  heroImage: "/assets/img/visualTeam.jpg",
+  heroImage: "/assets/img/equipment.jpg",
 };
 const ChoiceDetails = [
     {

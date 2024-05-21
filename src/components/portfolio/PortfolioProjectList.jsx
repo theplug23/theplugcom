@@ -9,9 +9,11 @@ import {Row, Col, NavLink, Button} from 'react-bootstrap';
 import MetaPost from '../header/MetaPost';
 import { displayWords } from '../../utils';
 import BgImage from '../header/BgImage';
+import axios from 'axios';
 
 function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
     const {t} = useTranslation("common")  
+    const [projects, setProjects] = useState([])
     const dataPortfolio = getPortfolioData();
     const category = new Set();
     dataPortfolio.map((p) => {
@@ -23,8 +25,8 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
     const [colValue, setColValue] = useState(12)
 
     useEffect(() => {
+        getProjects()
         const screenWidth = window.screen.width
-        //console.log(screenWidth)
         if (screenWidth > 800) {
             setColValue(4)
         } else if (screenWidth  <= 800 && screenWidth > 430) {
@@ -34,12 +36,16 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
         }
     }, [])
 
+    function getProjects() {
+        axios.get('https://api.comtheplug.com/api/portfolio')
+        .then(res => setProjects(res.data))
+    }
+
     return (
         <section className='mb-section'>
             <Row>
-                {dataPortfolio.map(
+                {projects.map(
                     (item, index) => {
-                        const description = typeof item.description[0] === "object" ? item.description[0].text : item.description[0]
                         return (
                             <Col xs={colValue} key={index} style={{marginBottom: 50}} className='portfolio-item'>
                                 <a href={`portfolio/${item.slug}`}>
@@ -57,7 +63,7 @@ function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
                                         {item.title && <h4 className='title-block' style={{ margin: '15px 0px'}}>
                                             <NavLink to={item.href} style= {{color: '#b99226'}}>{item.title}</NavLink>
                                         </h4>}
-                                        <p className="mt-15">{displayWords(t(description), 30)}</p>
+                                        <p className="mt-15">{displayWords(t(item.description), 30)}</p>
                                         <Button 
                                             href={item.href} 
                                             style= {{color: '#b99226', marginTop: '15px', textDecoration: 'underline'}}
