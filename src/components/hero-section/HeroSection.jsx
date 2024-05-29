@@ -1,6 +1,4 @@
 import React from "react";
-
-// Importing the CSS
 import "./style.scss";
 
 import MoveTrigger from "../../animation/MoveTrigger";
@@ -8,7 +6,7 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import {Pagination, SwiperOptions,Autoplay} from "swiper";
+import {Pagination, SwiperOptions, Autoplay} from "swiper";
 
 // Component
 import { Col, Row } from "react-bootstrap";

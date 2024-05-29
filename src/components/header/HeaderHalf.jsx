@@ -14,24 +14,26 @@ import { useTranslation } from 'react-i18next';
 
 
 function HeaderHalf({
-                        height,
-                        separate,
-                        attrContent,
-                        overlay,
-                        parallax,
-                        heroContent,
-                        parallaxContent,
-                        children,
-                        textButton,
-                        href, className
-                    }) {
+      height,
+      separate,
+      attrContent,
+      overlay,
+      parallax,
+      heroContent,
+      parallaxContent,
+      children,
+      textButton,
+      categories,
+      video,
+      href, className
+    }) {
 
     const header = useRef();
     const bg = useRef();
     const holder = useRef();
     const content = useRef();
     const q = gsap.utils.selector(header);
-    const {category, title, src, video} = heroContent;
+    const {title, src} = heroContent;
     const {t} = useTranslation("common")
 
 
@@ -74,9 +76,11 @@ function HeaderHalf({
             {
                 heroContent &&
                 <Container fluid  {...attrContent} className="hero-content" ref={content}>
-                    {category && <MetaPost category={category} separate={separate}/>}
-                    {title && <h1 className="title-heading">{t(title)}</h1>}
-                    {children && <div className="dsn-description mt-30">{children}</div>}
+                  {categories && categories.map((cat, i) => (
+                    <MetaPost category={cat.intitule} key={i} separate={separate}/>
+                  ))}
+                  {title && <h1 className="title-heading">{t(title)}</h1>}
+                  {children && <div className="dsn-description mt-30">{children}</div>}
                 </Container>
             }
 

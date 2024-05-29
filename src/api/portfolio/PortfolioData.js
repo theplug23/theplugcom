@@ -592,7 +592,6 @@ const data = [
         slug: 'esk-translations-ug',
         src: "/assets/img/logo/EsK_Translations.png",
         srcSlider: "/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg",
-        c: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
         category: ['Graphisme', 'Web Design'],
         description: [
             "ESK TRANSLATIONS UG se positionne en tant qu'agence de traduction offrant des services de qualité exceptionnelle aux entreprises internationales, multinationales, ainsi qu'aux particuliers. Elle veille à ce que ses traductions reflètent parfaitement la vision de ses clients, offrant ainsi une expérience enrichissante, captivante et agréable.",

@@ -78,7 +78,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             title: "Theplug Communication 2023 advertising spot",
             slug: 'Spot',
             category: ['Video'],
-            src: "https://youtu.be/UNTZ52GUkFM",
+            src: "https://youtu.be/aDTVWlWItsc?si=-tgs9C1BdETHLxMo",
             description: "Video montage of Theplug advertising spot",
             overlay: 1,
             video: {
