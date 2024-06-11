@@ -32,6 +32,7 @@
     "react-i18next": "^12.2.2",
     "react-icons": "^4.8.0",
     "react-justified-grid": "^1.0.0",
+    "react-loader-spinner": "^6.1.6",
     "react-redux": "^7.2.8",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",

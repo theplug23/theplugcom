@@ -48,7 +48,21 @@ const data = [
             "/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4",
             "/assets/img/project/WithOrWithout/with or without.jpg",
             "/assets/img/project/WithOrWithout/With or without logo.jpg",
-            "/assets/img/project/WithOrWithout/with or without 2.jpg"
+            "/assets/img/project/WithOrWithout/with or without 2.jpg",
+            "/assets/img/project/WithOrWithout/img-1.jpg",
+            "/assets/img/project/WithOrWithout/img-2.jpg",
+            "/assets/img/project/WithOrWithout/img-3.jpg",
+            "/assets/img/project/WithOrWithout/img-4.jpg",
+            "/assets/img/project/WithOrWithout/img-5.jpg",
+            "/assets/img/project/WithOrWithout/img-6.jpg",
+            "/assets/img/project/WithOrWithout/img-7.jpg",
+            "/assets/img/project/WithOrWithout/img-8.jpg",
+            "/assets/img/project/WithOrWithout/img-9.jpg",
+            "/assets/img/project/WithOrWithout/img-10.jpg",
+            "/assets/img/project/WithOrWithout/img-11.jpg",
+            "/assets/img/project/WithOrWithout/img-12.jpg",
+            "/assets/img/project/WithOrWithout/img-13.jpg",
+            "/assets/img/project/WithOrWithout/img-14.jpg"
         ],
         component: (props) => <ToastReel {...props}/>,
         info: {
@@ -578,7 +592,6 @@ const data = [
         slug: 'esk-translations-ug',
         src: "/assets/img/logo/EsK_Translations.png",
         srcSlider: "/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg",
-        c: '/assets/img/project/Esk Translations UG/esk-translation-Mock-up.jpg',
         category: ['Graphisme', 'Web Design'],
         description: [
             "ESK TRANSLATIONS UG se positionne en tant qu'agence de traduction offrant des services de qualité exceptionnelle aux entreprises internationales, multinationales, ainsi qu'aux particuliers. Elle veille à ce que ses traductions reflètent parfaitement la vision de ses clients, offrant ainsi une expérience enrichissante, captivante et agréable.",

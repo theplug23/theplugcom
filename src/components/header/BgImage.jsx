@@ -7,7 +7,7 @@ const Bg = styled.div`
 `;
 
 const BgImage = React.forwardRef(({src, video, height, overlay, imageOnly, alt, description, ...restProps}, ref) => {
-
+    console.log(video)
     return (
         <Bg theme={{height: height}} data-overlay={overlay} className="hero-img overflow" {...restProps} ref={ref}>
             {!video && <LazyImg src={src} className="cover-bg-img" alt={alt}/>}

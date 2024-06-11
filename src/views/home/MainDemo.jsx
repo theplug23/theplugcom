@@ -43,7 +43,6 @@ const MainDemo = () => {
                 <title>HOME - THEPLUG COM'</title>
             </Helmet>
 
-
             {/*Start Slider Portfolio*/}
             <SliderPortfolio tag="header" className="mb-section" />
             {/*End Slider Portfolio*/}
@@ -58,9 +57,13 @@ const MainDemo = () => {
             {/*Start Service Section*/}
             <Container className="section-margin">
                 <TitleSection description={t("Nos Services")}>
-                    {t("Cabinet d'études et conseil")}
+                    {t("Ce que nous faisons le mieux")}
                 </TitleSection>
-                <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30} />
+                <ServiceOne 
+                    className="text-center" 
+                    col={3} colMobile={1} colGap={0} 
+                    colGapTablet={30} 
+                />
             </Container>
             {/*End Service Section*/}
 
