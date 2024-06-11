@@ -90,9 +90,10 @@ function HeaderHalf({
                     <span className="background"/>
                     <span className="triangle"/>
                 </div>
+                {href !== null &&
                 <ButtonLink href={href} target="_blank" rel="noopener noreferrer">
-                    {t(textButton)}
-                </ButtonLink>
+                  {t(textButton)}
+                </ButtonLink>}
             </FooterHead>
 
         </header>
