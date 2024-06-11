@@ -95,7 +95,7 @@ function ProjectDetails(props) {
                     <HeaderHalf heroContent={project}
                         parallax={{yPercent: 30, scale: 1.1}}
                         textButton={t("Voir le site")}
-                        href={project?.slug}
+                        href={project?.href}
                         overlay={project?.overlay}
                         categories={project?.categories}
                         video={video}

@@ -43,7 +43,6 @@ const MainDemo = () => {
                 <title>HOME - THEPLUG COM'</title>
             </Helmet>
 
-
             {/*Start Slider Portfolio*/}
             <SliderPortfolio tag="header" className="mb-section" />
             {/*End Slider Portfolio*/}
