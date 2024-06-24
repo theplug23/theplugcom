@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {useNavigate, useParams} from "react-router-dom";
 import {getPortfolioItem} from "../../api/portfolio/PortfolioData";
 import ReactGA from 'react-ga4';
@@ -63,6 +63,7 @@ function ProjectDetails(props) {
         return <h1>{slug}</h1>
 
 
+<<<<<<< HEAD
     return (
         <React.Fragment>
             {isLoading ?
@@ -145,6 +146,9 @@ function ProjectDetails(props) {
             <Footer />
         </React.Fragment>
     )
+=======
+    return (data.component({data}));
+>>>>>>> 41eea177fd877136983de880dd27cad9c3f1f034
 }
 
 export default ProjectDetails;
