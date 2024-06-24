@@ -17,7 +17,7 @@ interface boxGalleryProps extends DsnGridProps {
     }
 }
 
-function BoxGallery({children, bgVid, className, title_mini, images, options, ...restProps}: boxGalleryProps) {
+function BoxGallery({children, bgVid, bgImg, className, title_mini, images, options, ...restProps}: boxGalleryProps) {
     
     const target = useRef();
     const generateId = generateString(5);
@@ -37,7 +37,7 @@ function BoxGallery({children, bgVid, className, title_mini, images, options, ..
         <div className={`dsn-box-gallery  ${className || ''}`} ref={target}>
             <DsnGrid {...restProps} >
                 {images.map(({src, alt, caption, groupPopup}, index) =>
-                    <BoxGalleryItem bgVid={bgVid} src={src} alt={alt}
+                    <BoxGalleryItem bgVid={bgVid} bgImg={bgImg} src={src} alt={alt}
                         caption={caption} key={index} title_mini={title_mini}
                         groupPopup={groupPopup || generateId}/>)
                 }
@@ -52,7 +52,7 @@ BoxGallery.defaultProps = {
     }
 };
 
-export function BoxGalleryItem({src, bgVid, caption, title_mini, groupPopup, className, ...restProps}) {
+export function BoxGalleryItem({src, bgVid, bgImg, caption, title_mini, groupPopup, className, ...restProps}) {
     
     function isImageOrVideo(url) {
         if (url.includes('youtube.com') || url.includes('youtu.be')) {
@@ -81,17 +81,19 @@ export function BoxGalleryItem({src, bgVid, caption, title_mini, groupPopup, cla
                 {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div> :
-        <div className={`item-box section-padding ${className || ''}`} {...restProps}>
+        <div className={`item-box section-padding ${className || ''}`} {...restProps} style={{background: `url(${bgImg})`, backgroundSize: 'cover'}}>
             <div className="image-zoom p-relative">
-                <div className="single-image"
-                    data-src={src}
-                    data-caption={caption}
-                    data-fancybox={groupPopup || ''}
-                >
-                    <video className="cover-bg-img" poster={bgVid}>
-                        <source src={src} type='video/mp4' />
-                    </video>
-                </div>
+                {bgVid &&
+                    <div className="single-image"
+                        data-src={src}
+                        data-caption={caption}
+                        data-fancybox={groupPopup || ''}
+                    >
+                        <video className="cover-bg-img" poster={bgVid}>
+                            <source src={src} type='video/mp4' />
+                        </video>
+                    </div>
+                }
                 {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div>

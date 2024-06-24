@@ -133,6 +133,7 @@ function ProjectDetails(props) {
                                 ))}
                                 title_mini={project?.title_mini}
                                 bgVid={project?.bgVid}
+                                bgImg={project?.bgImg}
                             />
                         )
                     }
