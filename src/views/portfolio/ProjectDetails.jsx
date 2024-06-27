@@ -62,7 +62,6 @@ function ProjectDetails(props) {
     if(!project)
         return <h1>{slug}</h1>
 
-
     return (
         <React.Fragment>
             {isLoading ?
@@ -133,6 +132,7 @@ function ProjectDetails(props) {
                                 ))}
                                 title_mini={project?.title_mini}
                                 bgVid={project?.bgVid}
+                                bgImg={project?.bgImg}
                             />
                         )
                     }

@@ -76,9 +76,11 @@ function HeaderHalf({
             {
                 heroContent &&
                 <Container fluid  {...attrContent} className="hero-content" ref={content}>
-                  {categories && categories.map((cat, i) => (
-                    <MetaPost category={cat.intitule} key={i} separate={separate}/>
-                  ))}
+                  <div>
+                    {categories && categories.map((cat, i) => (
+                      <MetaPost category={cat.intitule} key={i} separate={separate}/>
+                    ))}
+                  </div>
                   {title && <h1 className="title-heading">{t(title)}</h1>}
                   {children && <div className="dsn-description mt-30">{children}</div>}
                 </Container>

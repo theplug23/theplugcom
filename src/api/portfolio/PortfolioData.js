@@ -664,6 +664,29 @@ const data = [
             direction: "THEPLUG COM'",
             client: 'MADHI'
         }
+    },
+    {
+        id: 14,
+        title: "SAB Afrique",
+        slug: 'sab-afrique',
+        src: '/assets/video/Montage_SAB.mp4',
+        srcSlider: '/assets/video/Montage_SAB.mp4',
+        category: ['Graphisme'],
+        description: [
+            "Spécialisée dans la promotion et commercialisation de la culture africaine à travers des œuvres artisanales en Europe, l'entreprise MADHI a sollicité nos services pour la conception de son logo. Ce dernier a été conçu tel un réservoir, symbolisant une maison qui abrite la richesse africaine. Il traduit également des valeurs de résistance, de sérieux, et d'autorité, accentuées par l'utilisation de lettres en majuscules."
+        ],
+        overlay: 2,
+        bgVid: '/assets/img/project/Play icon.png',
+        date: "09-01-2023",
+        images: [ 
+            "/assets/video/Montage_SAB.mp4",
+            "/assets/img/project/SAB Afrique/logo2.png"
+        ],
+        component: (props) => <ToastReel {...props}/>,
+        info: {
+            direction: "THEPLUG COM'",
+            client: 'MADHI'
+        }
     }
 ]
 
