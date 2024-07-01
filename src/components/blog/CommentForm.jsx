@@ -23,7 +23,7 @@ function CommentForm({className, idPost }) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        toast('Commentaire envoyé !')
+        toast.success('Commentaire envoyé !')
         form.post_id = parseInt(idPost)
         axios.post('https://api.comtheplug.com/api/add-comment', form)
         .then((res) => {
@@ -32,10 +32,8 @@ function CommentForm({className, idPost }) {
                 email: '',
                 content: ''
             })
-            toast(res.data.message)
-            setTimeout(() => {
-                window.location.reload()
-            }, 3000)
+            toast.success(res.data.message)
+            getComments()
         })
     }
     
@@ -73,6 +71,7 @@ function CommentForm({className, idPost }) {
                             id="form_name" 
                             type="text" 
                             name="name" 
+                            value={form.name}
                             placeholder={t("Entrer votre nom")}
                             onChange={handleChange} 
                             required="required"
@@ -85,6 +84,7 @@ function CommentForm({className, idPost }) {
                             id="form_email" 
                             type="email" 
                             name="email" 
+                            value={form.email}
                             placeholder="Type your Email Address"
                             onChange={handleChange} 
                         />
@@ -96,6 +96,7 @@ function CommentForm({className, idPost }) {
                             id="form_message" 
                             className="form-control" 
                             name="content"
+                            value={form.content}
                             placeholder={t("Dites-nous ce que vous en pensez")}
                             required="required"
                             onChange={handleChange}
