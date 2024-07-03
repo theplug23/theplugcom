@@ -17,7 +17,7 @@ interface boxGalleryProps extends DsnGridProps {
     }
 }
 
-function BoxGallery({children, bgVid, bgImg, className, title_mini, images, options, ...restProps}: boxGalleryProps) {
+function BoxGallery({children, bgVid, className, title_mini, images, options, ...restProps}: boxGalleryProps) {
     
     const target = useRef();
     const generateId = generateString(5);
@@ -36,7 +36,7 @@ function BoxGallery({children, bgVid, bgImg, className, title_mini, images, opti
         
         <div className={`dsn-box-gallery  ${className || ''}`} ref={target}>
             <DsnGrid {...restProps} >
-                {images.map(({src, alt, caption, groupPopup}, index) =>
+                {images.map(({src, alt, bgImg, caption, groupPopup}, index) =>
                     <BoxGalleryItem bgVid={bgVid} bgImg={bgImg} src={src} alt={alt}
                         caption={caption} key={index} title_mini={title_mini}
                         groupPopup={groupPopup || generateId}/>)
@@ -81,7 +81,7 @@ export function BoxGalleryItem({src, bgVid, bgImg, caption, title_mini, groupPop
                 {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div> :
-        <div className={`item-box section-padding ${className || ''}`} {...restProps} style={{background: `url(${bgImg})`, backgroundSize: 'cover'}}>
+        <div className={`item-box section-padding ${className || ''}`} {...restProps}>
             <div className="image-zoom p-relative">
                 {bgVid &&
                     <div className="single-image"
@@ -89,7 +89,7 @@ export function BoxGalleryItem({src, bgVid, bgImg, caption, title_mini, groupPop
                         data-caption={caption}
                         data-fancybox={groupPopup || ''}
                     >
-                        <video className="cover-bg-img" poster={bgVid}>
+                        <video className="cover-bg-img" poster={bgImg}>
                             <source src={src} type='video/mp4' />
                         </video>
                     </div>

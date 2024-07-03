@@ -128,11 +128,10 @@ function ProjectDetails(props) {
                             <BoxGallery className="section-margin" col={3} 
                                 colMobile={1} colGap={0} rowGap={0}
                                 images={project.images.map((image) => (
-                                    {src: image.src, caption: project?.title}
+                                    {src: image.src, caption: project?.title, bgImg: image.bgImg}
                                 ))}
                                 title_mini={project?.title_mini}
                                 bgVid={project?.bgVid}
-                                bgImg={project?.bgImg}
                             />
                         )
                     }
