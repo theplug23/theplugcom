@@ -27,19 +27,19 @@ function MenuContent({className}) {
                 <div className="nav-content mt-30">
                     <h5 className="sm-title-block mb-10">{t("Contacts")}</h5>
                     <p className="links over-hidden mb-1">
-                        <a className="link-hover" href="tel:+49 1575 2069252" data-hover-text="+49 1575 2069252">
-                        <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i> (+49) 15752069252
+                        <a className="link-hover" href="tel:+491639209766" data-hover-text="(+49) 1639209766">
+                        <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i> (+49) 1639209766
                         </a>
                         <br/>
-                        <a className="link-hover" href="tel:+33 7 54 54 39 97" data-hover-text="+33 7 54 54 39 97">
+                        <a className="link-hover" href="tel:+33754543997" data-hover-text="+33 754543997">
                         <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i> (+33) 754543997
                         </a>
                         <br/>
-                        <a className="link-hover" href="tel:+237 678 129 832" data-hover-text="+237 678 129 832">
-                        <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i>  (+237)  678129832
+                        <a className="link-hover" href="tel:+237686117771" data-hover-text="+237 686117771">
+                        <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i> (+237) 686117771
                         </a>
                         <br/>
-                        <a className="link-hover" href="tel:+221 77 742 19 48" data-hover-text="+221 77 742 19 48">
+                        <a className="link-hover" href="tel:+221777421948" data-hover-text="+221 77 742 19 48">
                         <i class="fa fa-phone" aria-hidden="true" style= {{color: '#b99226'}}> :</i> (+221) 777421948
                         </a>
                     </p>

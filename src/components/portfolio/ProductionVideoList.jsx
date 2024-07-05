@@ -125,6 +125,123 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
                 loop: true
             }
         },
+        {
+            id: 10,
+            title: "Teaser SAB Afrique 2024",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/D_d84zy4iSU?si=-i6KCPamVfjS6B0E",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/logo/Vignette_sab.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 11,
+            title: "Mme Adeline SEDE KAMGA",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/4b3pSgoF0VA?si=7TWRgiXA9W4nD8IZ",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_fabafrik.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 12,
+            title: "Mme Mireille Flore DEFO FOTSO",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/l0A6l1a_efM?si=qq2jaorMowJJRZcO",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_adeline.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 13,
+            title: "M. Joël KAMSU",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/kqYtcXOCIGA?si=OADKWPbioGXvv9YH",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_yengafrica.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 14,
+            title: "M. Patrick Kofana",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/ztYQJ8YI5OU?si=TVmQV0VFbkTi-ujM",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_tara.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 15,
+            title: "Mme Julia Samantha ÉDIMA",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/NddQuO2P3eA?si=4tC9VOR_PLtbU1mD",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_miss.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 16,
+            title: "Maman KAMITE",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/O9kffKany6s?si=fJZiAbpc487tXj4K",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_mmh.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 17,
+            title: "Mme ANGE MBAYEN",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/rEBG2Bw1OY0?si=LmFwNrXFcQ-jynfC",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_bold.jpg',
+                loop: true
+            }
+        },
+        {
+            id: 18,
+            title: "M. NDOCK BIDI",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/V049M03tjbc?si=pnK0vv6gOn93DJN1",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/Vignette_ndockbidi.jpg',
+                loop: true
+            }
+        }
     ]
     const {t} = useTranslation("common")
     const iso = useRef();
