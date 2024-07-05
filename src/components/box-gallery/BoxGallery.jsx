@@ -81,7 +81,7 @@ export function BoxGalleryItem({src, bgVid, bgImg, caption, title_mini, groupPop
                 {caption && <div className="caption">{title_mini ? title_mini : caption}</div>}
             </div>
         </div> :
-        <div className={`item-box section-padding ${className || ''}`} {...restProps}>
+        <div className={`item-box section-padding ${className || ''}`} {...restProps} style={{background: `url(${bgImg})`, backgroundSize: 'cover'}}>
             <div className="image-zoom p-relative">
                 {bgVid &&
                     <div className="single-image"

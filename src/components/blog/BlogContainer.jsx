@@ -8,7 +8,7 @@ import { longueurTexte } from '../../utils';
 
 const BlogClassic = () => {
     const [posts, setPosts] = useState([])
-
+    
     useEffect(() => {
         axios.get('https://api.comtheplug.com/api/posts')
         .then(res => setPosts(res.data))
