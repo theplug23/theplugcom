@@ -693,6 +693,22 @@ const data = [
             videographie: "THEPLUG COM'"
         }
     },
+    {
+        id: 15,
+        title: "Leslie & Daniel",
+        slug: 'leslie-et-daniel',
+        src: '/assets/img/project/Leslie&Daniel/Leslie-&-Daniel-website-Mock-up.jpg',
+        srcSlider: "/assets/img/project/Leslie&Daniel/Leslie-&-Daniel-website-Mock-up.jpg",
+        category: ['Web Design'],
+        description: [],
+        skils: "Réalisation du site web, gestion numérique des invitations",
+        overlay: 2,
+        date: "20-06-2024",
+        href: "https://leslieetdaniel.fr",
+        images: [],
+        isvideo: false,
+        component: (props) => <ToastReel {...props} />,
+    },
 ]
 
 export const getPortfolioData = () => data;
