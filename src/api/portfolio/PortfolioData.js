@@ -669,25 +669,30 @@ const data = [
         id: 14,
         title: "SAB Afrique",
         slug: 'sab-afrique',
-        src: "/assets/img/logo/SAB.png",
-        srcSlider: "/assets/video/Montage_SAB.mp4",
-        category: ['Graphisme'],
-        description: [
-            "Spécialisée dans la promotion et commercialisation de la culture africaine à travers des œuvres artisanales en Europe, l'entreprise MADHI a sollicité nos services pour la conception de son logo. Ce dernier a été conçu tel un réservoir, symbolisant une maison qui abrite la richesse africaine. Il traduit également des valeurs de résistance, de sérieux, et d'autorité, accentuées par l'utilisation de lettres en majuscules."
-        ],
+        src: '/assets/video/Montage_SAB.mp4',
+        srcSlider: "/assets/img/project/SAB Afrique/2024/SABAFRIQUE-Mock-up.jpg",
+        category: ['Graphisme', 'Vidéographie', 'Web Design', 'Photographie'],
+        description: [],
+        skils: "Réalisation du site web, vidéographie, montage vidéo, graphic design, photographie",
         overlay: 2,
+        date: "28-06-2024",
+        href: "https://sabafrique.com/",
+        video: {
+            poster: '/assets/video/Montage_SAB.mp4',
+            loop: true
+        },
         bgVid: '/assets/img/project/Play icon.png',
-        date: "09-01-2023",
-        images: [ 
-            "/assets/video/Montage_SAB.mp4",
-            "/assets/img/project/SAB Afrique/logo2.png"
-        ],
-        component: (props) => <ToastReel {...props}/>,
+        images: [],
+        isvideo: true,
+        component: (props) => <ToastReel {...props} />,
         info: {
-            direction: "THEPLUG COM'",
-            client: 'MADHI'
+            direction: "D-FIT",
+            design: "THEPLUG COM'",
+            client: 'SAB Afrique',
+            photographie: "THEPLUG COM'",
+            videographie: "THEPLUG COM'"
         }
-    }
+    },
 ]
 
 export const getPortfolioData = () => data;
