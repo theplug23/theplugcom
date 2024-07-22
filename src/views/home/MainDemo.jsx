@@ -1,11 +1,7 @@
 import React, { useEffect } from "react";
-
-
 import { Container } from "react-bootstrap";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
-
-
 import SliderPortfolio from "../../components/slider-portfolio/SliderPortfolio";
 import HeroSection from "../../components/hero-section/HeroSection";
 import ServiceOne from "../../components/services/ServiceOne";

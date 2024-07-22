@@ -241,6 +241,19 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
                 poster: '/assets/img/project/Vignette_ndockbidi.jpg',
                 loop: true
             }
+        },
+        {
+            id: 19,
+            title: "Stromberg Finanz Consulting",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://www.youtube.com/watch?v=PirRprAka-U&t=143s",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/logo/Vignette_stromberg.png',
+                loop: true
+            }
         }
     ]
     const {t} = useTranslation("common")

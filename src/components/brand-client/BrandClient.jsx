@@ -108,13 +108,19 @@ const BrandDetails = [
         src: "/assets/img/logo/DFIT LOGO.png",
         title: "D-FIT DELIVERY",
         href: "https://www.instagram.com/d_fit_delivery/",
-        linkText: "www.instagram.com/d_fit_delivery"
+        linkText: "instagram.com/d_fit_delivery"
     },
     {
         src: "/assets/img/logo/SAB.png",
-        title: "SAB CAMEROUN",
-        href: "https://www.instagram.com/sab_cameroun/",
-        linkText: "www.instagram.com/sab_cameroun"
+        title: "SAB AFRIQUE",
+        href: "https://sabafrique.com",
+        linkText: "www.sabafrique.com"
+    },
+    {
+        src: "/assets/img/logo/Logo Stromberg.png",
+        title: "Stromberg Finanz Consulting",
+        //href: "https://www.instagram.com/sab_cameroun/",
+        //linkText: "www.instagram.com/sab_cameroun"
     }
 ]
 
