@@ -119,8 +119,8 @@ const BrandDetails = [
     {
         src: "/assets/img/logo/Logo Stromberg.png",
         title: "Stromberg Finanz Consulting",
-        //href: "https://www.instagram.com/sab_cameroun/",
-        //linkText: "www.instagram.com/sab_cameroun"
+        href: "https://www.aerzteberatung-duesseldorf.de/",
+        linkText: "www.aerzteberatung-duesseldorf.de"
     }
 ]
 
