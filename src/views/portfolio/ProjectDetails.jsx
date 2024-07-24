@@ -14,12 +14,15 @@ import BoxGallery from '../../components/box-gallery/BoxGallery';
 import Footer from '../../components/footer/Footer';
 import axios from 'axios';
 import { ColorRing } from 'react-loader-spinner'
+import i18n from '../../i18n';
 
 function ProjectDetails(props) {
     const {slug} = useParams();
     const [nextData, setNextData] = useState({})
     const {t} = useTranslation("common")
     const [project, setProject] = useState({})
+    const [projectFiltered, setProjectFiltered] = useState({})
+    const [descriptions, setDescriptions] = useState([])
     const [info, setInfo] = useState({})
     const [video, setVideo] = useState({})
     const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +32,7 @@ function ProjectDetails(props) {
             try {
                 const response = await axios.get('https://api.comtheplug.com/api/portfolio/' + slug);
                 const projectData = response.data.project;
+                setDescriptions(response.data.description)
     
                 // Mettre à jour l'état du projet et des informations
                 project.video = JSON.parse(projectData.video)
@@ -58,7 +62,14 @@ function ProjectDetails(props) {
         // Appeler la fonction fetchData dans useEffect avec slug comme dépendance
         fetchData()
     }, [slug]);
-
+    
+    useEffect(() => {
+        if (project) {
+            const data = descriptions.filter(p => p.langue === i18n.language)
+            setProjectFiltered(data[0])
+        }
+    }, [i18n.language, project])
+    
     if(!project)
         return <h1>{slug}</h1>
 
@@ -87,8 +98,8 @@ function ProjectDetails(props) {
                 </> :
                 <>
                     <Helmet>
-                        <title>{project?.title + " - THEPLUG COM'"}</title>
-                        <meta name="description" content={project?.title} />
+                        <title>{t(project?.title) + " - THEPLUG COM'"}</title>
+                        <meta name="description" content={t(project?.title)} />
                     </Helmet>
 
                     <HeaderHalf heroContent={project}
@@ -103,13 +114,13 @@ function ProjectDetails(props) {
                     </HeaderHalf>
 
                     <Container className="section-margin">
-                        <TitleCover>{project?.title}</TitleCover>
+                        <TitleCover>{t(project?.title)}</TitleCover>
                         <TextTrigger duration={0.8} stagger={0.1}>
-                            {(ref) => <h2 className="title-section" ref={ref}>{project?.title}</h2>}
+                            {(ref) => <h2 className="title-section" ref={ref}>{t(project?.title)}</h2>}
                         </TextTrigger>
                         <FadeUpTrigger>
                             {(ref) => <>
-                                <div style={{marginTop: 50}} dangerouslySetInnerHTML={{ __html: project?.description}}></div>
+                                <div style={{marginTop: 50}} dangerouslySetInnerHTML={{ __html: projectFiltered?.text}}></div>
                                 
                                 <ul className="mt-50 color-heading">
                                     {info?.direct && <li ref={ref}>{t("Art Direction")} : {info?.direction}</li>}

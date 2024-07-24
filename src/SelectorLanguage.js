@@ -5,7 +5,6 @@ import "./assets/sass/SelectorLanguage.scss"
 import francais from './assets/img/fr.png'
 import anglais from './assets/img/en.png'
 import allemand from './assets/img/de.png'
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const languages = [
@@ -28,11 +27,6 @@ const languages = [
 
 export default function SelectorLanguage() {
   const { t } = useTranslation("common")
-
-  const handleChange = (e) => {
-    const lng = e.target.value;
-    i18n.changeLanguage(lng);
-  }
   
   function clickLanguage(lng) {
     i18n.changeLanguage(lng);
