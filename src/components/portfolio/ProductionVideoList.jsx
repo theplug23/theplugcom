@@ -62,6 +62,19 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         {
             id: 5,
+            title: "Stromberg Finanz Consulting",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://www.youtube.com/watch?v=PirRprAka-U&t=143s",
+            description: "",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/logo/Vignette_stromberg.png',
+                loop: true
+            }
+        },
+        {
+            id: 6,
             title: "Discover the Maldives with Epideaa",
             slug: 'Spot',
             category: ['Video'],
@@ -74,7 +87,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 6,
+            id: 7,
             title: "Theplug Communication 2023 advertising spot",
             slug: 'Spot',
             category: ['Video'],
@@ -87,7 +100,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 7,
+            id: 8,
             title: "Finex advertising spot",
             slug: 'Spot',
             category: ['Video'],
@@ -100,7 +113,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 8,
+            id: 9,
             title: "Pregnancy Announcement video",
             slug: 'Spot',
             category: ['Video'],
@@ -113,7 +126,7 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 9,
+            id: 10,
             title: "8 MARCH CAMPAIGN",
             slug: 'Spot',
             category: ['Video'],
@@ -126,8 +139,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 10,
-            title: "Teaser SAB Afrique 2024",
+            id: 11,
+            title: "Teaser - SAB Afrique 2024",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/D_d84zy4iSU?si=-i6KCPamVfjS6B0E",
@@ -139,8 +152,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 11,
-            title: "Mme Adeline SEDE KAMGA",
+            id: 12,
+            title: "Interview - Mme Adeline SEDE KAMGA",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/4b3pSgoF0VA?si=7TWRgiXA9W4nD8IZ",
@@ -152,8 +165,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 12,
-            title: "Mme Mireille Flore DEFO FOTSO",
+            id: 13,
+            title: "Interview - Mme Mireille Flore DEFO FOTSO",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/l0A6l1a_efM?si=qq2jaorMowJJRZcO",
@@ -165,8 +178,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 13,
-            title: "M. Joël KAMSU",
+            id: 14,
+            title: "Interview - M. Joël KAMSU",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/kqYtcXOCIGA?si=OADKWPbioGXvv9YH",
@@ -178,8 +191,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 14,
-            title: "M. Patrick Kofana",
+            id: 15,
+            title: "Interview - M. Patrick Kofana",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/ztYQJ8YI5OU?si=TVmQV0VFbkTi-ujM",
@@ -191,8 +204,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 15,
-            title: "Mme Julia Samantha ÉDIMA",
+            id: 16,
+            title: "Interview - Mme Julia Samantha ÉDIMA",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/NddQuO2P3eA?si=4tC9VOR_PLtbU1mD",
@@ -204,8 +217,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 16,
-            title: "Maman KAMITE",
+            id: 17,
+            title: "Interview - Maman KAMITE",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/O9kffKany6s?si=fJZiAbpc487tXj4K",
@@ -217,8 +230,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 17,
-            title: "Mme ANGE MBAYEN",
+            id: 18,
+            title: "Interview - Mme ANGE MBAYEN",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/rEBG2Bw1OY0?si=LmFwNrXFcQ-jynfC",
@@ -230,8 +243,8 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 18,
-            title: "M. NDOCK BIDI",
+            id: 19,
+            title: "Interview - M. NDOCK BIDI",
             slug: 'Spot',
             category: ['Video'],
             src: "https://youtu.be/V049M03tjbc?si=pnK0vv6gOn93DJN1",
@@ -239,19 +252,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             overlay: 1,
             video: {
                 poster: '/assets/img/project/Vignette_ndockbidi.jpg',
-                loop: true
-            }
-        },
-        {
-            id: 19,
-            title: "Stromberg Finanz Consulting",
-            slug: 'Spot',
-            category: ['Video'],
-            src: "https://www.youtube.com/watch?v=PirRprAka-U&t=143s",
-            description: "",
-            overlay: 1,
-            video: {
-                poster: '/assets/img/logo/Vignette_stromberg.png',
                 loop: true
             }
         }

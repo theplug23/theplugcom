@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { dsnCN } from '../../hooks/helper';
-import DsnGrid, { DsnGridProps } from '../DsnGrid';
+import React, { useState, useEffect } from 'react'
 import Isotope from "isotope-layout";
 import { useTranslation } from "react-i18next";
 import {getPortfolioData} from "../../api/portfolio/PortfolioData";
@@ -12,7 +10,7 @@ import BgImage from '../header/BgImage';
 import axios from 'axios';
 import { ColorRing } from 'react-loader-spinner'
 
-function PortfolioProjectList({ className, ...restProps }: DsnGridProps) {
+function PortfolioProjectList({ className, ...restProps }) {
     const {t} = useTranslation("common")  
     const [projects, setProjects] = useState([])
     const dataPortfolio = getPortfolioData();
