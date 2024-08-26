@@ -10,6 +10,7 @@ import "lightgallery/css/lg-thumbnail.css";
 // If you want you can use SCSS instead of css
 import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
+import { displayWords } from "../../utils";
 
 function ProductionVideoItem({portoDetails, imageOnly, className}) {
     const {t} = useTranslation("common")
@@ -56,7 +57,7 @@ function ProductionVideoItem({portoDetails, imageOnly, className}) {
           
             <div className="info-text" style={{ marginTop: '-100px'}}>
                 <h4 className="title-block" style={{ textAlign: 'left', fontSize: 15 }}>{portoDetails.title}</h4>
-                <p style={{ textAlign: 'left', fontSize: 14 }}>{portoDetails.description}</p>
+                <p style={{ textAlign: 'left', fontSize: 14 }}>{portoDetails.description.length > 30 && displayWords(portoDetails.description, 30)}</p>
             </div>
         </a>
     )

@@ -52,6 +52,7 @@ function ProjectDetails(props) {
                 const nextResponse = await axios.get('https://api.comtheplug.com/api/portfolios/' + id);
                 const nextProject = nextResponse.data.project;
                 setNextData(nextProject)
+                console.log(nextProject)
                 setIsLoading(false);
             } catch (error) {
                 console.error('Une erreur s\'est produite lors du chargement des données du projet:', error);

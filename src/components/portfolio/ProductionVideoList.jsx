@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 export default function ProductionVideoList({ className, ...restProps }: DsnGridProps) {
     const videos = [
         {
-            id: 1,
             title: "THEPLUG Reel 2023",
             slug: 'Spot',
             category: ['Video'],
@@ -22,7 +21,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
         },
         
         {
-            id: 2,
             title: "WifOR Institute GmbH (Darmstadt)",
             slug: 'Spot',
             category: ['Video'],
@@ -35,7 +33,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 3,
             title: "NULLDREI-Documentary",
             slug: 'Spot',
             category: ['Video'],
@@ -48,7 +45,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 4,
             title: "ImageFilm - SoPlus Line GmbH",
             slug: 'Spot',
             category: ['Video'],
@@ -61,7 +57,18 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 5,
+            title: "Behinderten und Rehabilitations Sportverband BERLIN Imagefilm",
+            slug: 'Spot',
+            category: ['Video'],
+            src: "https://youtu.be/guefium_CSE",
+            description: "Erleben Sie das engagierte Wirken des BRSV Berlin in der Förderung des Sports für Menschen mit Behinderung. Dieser Imagefilm zeigt inspirierende Geschichten von Athleten, die Hindernisse überwinden, die Dynamik von Wettbewerben und die Bedeutung sozialer Inklusion durch Sport. Der BRSV Berlin ist mehr als ein Verein – er ist ein Symbol für Resilienz und Hoffnung, das allen die Möglichkeit gibt, sich körperlich und mental zu entfalten. Begleiten Sie uns auf einer Reise, bei der jede Bewegung zählt und jeder Sieg geteilt wird.",
+            overlay: 1,
+            video: {
+                poster: '/assets/img/project/vignette_Behinderten.png',
+                loop: true
+            }
+        },
+        {
             title: "Stromberg Finanz Consulting",
             slug: 'Spot',
             category: ['Video'],
@@ -74,7 +81,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 6,
             title: "Discover the Maldives with Epideaa",
             slug: 'Spot',
             category: ['Video'],
@@ -87,7 +93,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 7,
             title: "Theplug Communication 2023 advertising spot",
             slug: 'Spot',
             category: ['Video'],
@@ -100,7 +105,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 8,
             title: "Finex advertising spot",
             slug: 'Spot',
             category: ['Video'],
@@ -113,7 +117,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 9,
             title: "Pregnancy Announcement video",
             slug: 'Spot',
             category: ['Video'],
@@ -126,7 +129,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 10,
             title: "8 MARCH CAMPAIGN",
             slug: 'Spot',
             category: ['Video'],
@@ -139,7 +141,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 11,
             title: "Teaser - SAB Afrique 2024",
             slug: 'Spot',
             category: ['Video'],
@@ -152,7 +153,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 12,
             title: "Interview - Mme Adeline SEDE KAMGA",
             slug: 'Spot',
             category: ['Video'],
@@ -165,7 +165,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 13,
             title: "Interview - Mme Mireille Flore DEFO FOTSO",
             slug: 'Spot',
             category: ['Video'],
@@ -178,7 +177,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 14,
             title: "Interview - M. Joël KAMSU",
             slug: 'Spot',
             category: ['Video'],
@@ -191,7 +189,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 15,
             title: "Interview - M. Patrick Kofana",
             slug: 'Spot',
             category: ['Video'],
@@ -204,7 +201,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 16,
             title: "Interview - Mme Julia Samantha ÉDIMA",
             slug: 'Spot',
             category: ['Video'],
@@ -217,7 +213,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 17,
             title: "Interview - Maman KAMITE",
             slug: 'Spot',
             category: ['Video'],
@@ -230,7 +225,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 18,
             title: "Interview - Mme ANGE MBAYEN",
             slug: 'Spot',
             category: ['Video'],
@@ -243,7 +237,6 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
             }
         },
         {
-            id: 19,
             title: "Interview - M. NDOCK BIDI",
             slug: 'Spot',
             category: ['Video'],

@@ -17,7 +17,7 @@ function NextProject({height, attrContent, overlay, heroContent, to, className})
     const header = useRef();
     const bg = useRef();
     const content = useRef();
-    const {title, src, video} = heroContent || {};
+    const {title, src, bgImg, video} = heroContent || {};
     const {t} = useTranslation("common")
 
     useLayoutEffect(() => {
