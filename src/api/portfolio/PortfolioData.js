@@ -5,7 +5,7 @@ const data = [
     {
         id: 1,
         title: "Podcast WithOrWithout",
-        slug: 'Braydon Manu: Der Profifußballer, der Talent auf dem Spielfeld und den Glauben an Christus vereint',
+        slug: 'Braydon-Manu-Der-Profifußballer-der-Talent-auf-dem-Spielfeld-und-den-Glauben-an-Christus-vereint',
         src: '/assets/video/WITH OR WITHOUT  LOGO ANIMATION.mp4',
         srcSlider: '/assets/img/project/WithOrWithout/With or without logo.jpg',
         category: ['Graphisme', 'Vidéographie', 'Photographie'],

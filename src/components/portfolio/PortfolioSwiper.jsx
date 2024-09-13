@@ -30,8 +30,6 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 
-
-
 const PortfolioSwiper = ({desktop, mobile, tablet, ...restProps}:SwiperOptions) => {
     const {t} = useTranslation("common")
     const dataPortfolio = getPortfolioData();
