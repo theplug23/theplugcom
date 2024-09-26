@@ -6,12 +6,6 @@ const  TeamDetails = [
         link: "/contact",
     },
     {
-        src: "/assets/img/team/philipp kopp 1.jpg",
-        title: "Philipp Kopp",
-        subTitle: "CO-FOUNDER, ART DIRECTOR, VIDEO-PRODUCER, CUTTER & CONCEPTUALIZER",
-        link: "/contact",
-    },
-    {
         src: "/assets/img/team/Estelle.jpg",
         title: "ESTELLE KAMWA",
         subTitle: "CO-FOUNDER, REDACTRICE , \n TRADUCTRICE & DIRECTRICE DE VENTE",
@@ -21,6 +15,12 @@ const  TeamDetails = [
         src: "/assets/img/team/Younes Frikech.jpg",
         title: "YOUNES FRIKECH",
         subTitle: "SALES & PROJECT MANAGER",
+        link: "/contact",
+    },
+    {
+        src: "/assets/img/team/philipp kopp 1.jpg",
+        title: "Philipp Kopp",
+        subTitle: "ART DIRECTOR, VIDEO-PRODUCER, CUTTER & CONCEPTUALIZER",
         link: "/contact",
     },
     {
