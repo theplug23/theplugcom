@@ -18,6 +18,12 @@ const  TeamDetails = [
         link: "/contact",
     },
     {
+        src: "/assets/img/team/Younes Frikech.jpg",
+        title: "YOUNES FRIKECH",
+        subTitle: "SALES & PROJECT MANAGER",
+        link: "/contact",
+    },
+    {
         src: "/assets/img/team/Francine.jpg",
         title: "FRANCINE EWANE EPEE",
         subTitle: "DIRECTRICE DE COMMUNICATION , BRAND STRATEGISTE \n , GRAPHISTE & MANAGEUR DE PROJET",

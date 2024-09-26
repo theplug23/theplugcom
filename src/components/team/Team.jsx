@@ -12,9 +12,6 @@ import 'swiper/css/autoplay';
 import TeamDetails from './TeamDetails';
 import { useTranslation } from 'react-i18next';
 
-
-
-
 const Team = ({className, desktop, mobile, tablet, ...restProps}: SwiperOptions) => {
     const [isOpen, setIsOpen] = useState(false);
     const {t} = useTranslation("common")
@@ -24,30 +21,27 @@ const Team = ({className, desktop, mobile, tablet, ...restProps}: SwiperOptions)
     };
 
     return (
-     
-            <Swiper
-                modules={[Pagination , Autoplay]}
-                pagination={{clickable: true, el: '.swiper-pagination'}}
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={{delay: 3000}}
-                breakpoints={{
-                    992: desktop,
-                    768: tablet,
-                    576: mobile
-                }}
-                className={`dsn-team ${className || ''}`}
-                {...restProps}
-            >
-                {TeamDetails.map((item, index) =>
-                    <SwiperSlide key={index}>
-                        <TeamItem src={item.src} title={item.title} subTitle={t(item.subTitle)} link={item.link} openModal={openModal}/>
-                    </SwiperSlide>
-                )}
-                <div className="swiper-pagination"/>
-            </Swiper>
-   
-       
+        <Swiper
+            modules={[Pagination , Autoplay]}
+            pagination={{clickable: true, el: '.swiper-pagination'}}
+            spaceBetween={30}
+            slidesPerView={1}
+            autoplay={{delay: 3000}}
+            breakpoints={{
+                992: desktop,
+                768: tablet,
+                576: mobile
+            }}
+            className={`dsn-team ${className || ''}`}
+            {...restProps}
+        >
+            {TeamDetails.map((item, index) =>
+                <SwiperSlide key={index}>
+                    <TeamItem src={item.src} title={item.title} subTitle={t(item.subTitle)} link={item.link} openModal={openModal}/>
+                </SwiperSlide>
+            )}
+            <div className="swiper-pagination"/>
+        </Swiper>
     );
 }
 
