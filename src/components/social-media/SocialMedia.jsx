@@ -10,7 +10,7 @@ function SocialMedia({className}) {
     const ref = useRef();
     const socialData = [
         {link: "https://www.facebook.com/thepluggroup1/", icon: faFacebookF},
-        {link: "https://www.instagram.com/theplug_group/", icon: faInstagram},
+        {link: "https://www.instagram.com/comtheplug", icon: faInstagram},
         {link: "https://www.linkedin.com/company/42470224", icon: faLinkedin},
         {link: "https://wa.me/+4915752069252/", icon: faWhatsapp},
         {link: "https://twitter.com/THEPLUG_GROUP", icon: faTwitter},

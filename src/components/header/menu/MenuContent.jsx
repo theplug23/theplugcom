@@ -7,7 +7,7 @@ function MenuContent({className}) {
 
     const socialData = [
         {link: "https://www.facebook.com/thepluggroup1/", name: 'Facebook'},
-        {link: "https://www.instagram.com/theplug_group/", name: 'Instagram'},
+        {link: "https://www.instagram.com/comtheplug", name: 'Instagram'},
         {link: "https://www.linkedin.com/company/42470224", name: 'LinkedIn'},
         {link: "https://wa.me/+4915752069252/", name: 'Whatsapp'},
         {link: "https://twitter.com/THEPLUG_GROUP", name: 'Twitter'},
