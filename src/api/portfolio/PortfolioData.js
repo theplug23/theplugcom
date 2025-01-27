@@ -114,7 +114,7 @@ const data = [
         id: 3,
         title: "WifOR Institute GmbH feiert 15-jähriges Jubiläum im Merck-Stadion am Böllenfalltor(Darmstadt)",
         title_mini: "WifOR Institute GmbH",
-        slug: 'WifOR-Institute-GmbH-feiert-15-jähriges-Jubiläum-im-Merck-Stadion-am-Böllenfalltor(Darmstadt)',
+        slug: 'WifOR-Institute-GmbH-feiert-15-jaehriges-Jubilaeum-im-Merck-Stadion-am-Boellenfalltor(Darmstadt)',
         src: '/assets/img/project/Wifor/Bild-2.jpg',
         category: ['Photographie', 'Vidéographie'],
         description: [
@@ -687,6 +687,7 @@ const data = [
         component: (props) => <ToastReel {...props} />,
         info: {
             direction: "D-FIT",
+            planification_et_communication_d_evenements: "Planification & Communication d'événements: THEPLUG COM'",
             design: "THEPLUG COM'",
             client: 'SAB Afrique',
             photographie: "THEPLUG COM'",

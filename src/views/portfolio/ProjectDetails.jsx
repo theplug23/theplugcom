@@ -124,7 +124,8 @@ function ProjectDetails(props) {
                                 <div style={{marginTop: 50}} dangerouslySetInnerHTML={{ __html: projectFiltered?.text}}></div>
                                 
                                 <ul className="mt-50 color-heading">
-                                    {info?.direct && <li ref={ref}>{t("Art Direction")} : {info?.direction}</li>}
+                                    {info?.direction && <li ref={ref}>{t("Art Direction")} : {info?.direction}</li>}
+                                    {info?.planing && <li className="mt-1" ref={ref}>{t("event planing & communication")} : {info?.planing}</li>}
                                     {info?.design && <li className="mt-1" ref={ref}>{t("Web Design")} : {info?.design}</li>}
                                     {info?.music && <li className="mt-1" ref={ref}>{t("Musique")} : {info?.music}</li>}
                                     {info?.photographie && <li className="mt-1" ref={ref}>{t("Photographie")} : {info?.photographie}</li>}
