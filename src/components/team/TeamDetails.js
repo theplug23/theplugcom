@@ -17,12 +17,12 @@ const  TeamDetails = [
         subTitle: "SALES & PROJECT MANAGER",
         link: "/contact",
     },
-    {
-        src: "/assets/img/team/philipp kopp 1.jpg",
-        title: "Philipp Kopp",
-        subTitle: "ART DIRECTOR, VIDEO-PRODUCER, CUTTER & CONCEPTUALIZER",
-        link: "/contact",
-    },
+    // {
+    //     src: "/assets/img/team/philipp kopp 1.jpg",
+    //     title: "Philipp Kopp",
+    //     subTitle: "ART DIRECTOR, VIDEO-PRODUCER, CUTTER & CONCEPTUALIZER",
+    //     link: "/contact",
+    // },
     {
         src: "/assets/img/team/Francine.jpg",
         title: "FRANCINE EWANE EPEE",

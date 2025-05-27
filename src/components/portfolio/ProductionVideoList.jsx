@@ -7,18 +7,18 @@ import { useTranslation } from "react-i18next";
 
 export default function ProductionVideoList({ className, ...restProps }: DsnGridProps) {
     const videos = [
-        {
-            title: "THEPLUG Reel 2023",
-            slug: 'Spot',
-            category: ['Video'],
-            src: "https://youtu.be/Y9mjsPi7UDk",
-            description: "Video montage representing a compilation of all the video projects produced by Theplug 2023",
-            overlay: 1,
-            video: {
-                poster: '/assets/img/project/Vignette 9.jpg',
-                loop: true
-            }
-        },
+        // {
+        //     title: "THEPLUG Reel 2023",
+        //     slug: 'Spot',
+        //     category: ['Video'],
+        //     src: "https://youtu.be/Y9mjsPi7UDk",
+        //     description: "Video montage representing a compilation of all the video projects produced by Theplug 2023",
+        //     overlay: 1,
+        //     video: {
+        //         poster: '/assets/img/project/Vignette 9.jpg',
+        //         loop: true
+        //     }
+        // },
         
         {
             title: "WifOR Institute GmbH (Darmstadt)",
@@ -32,18 +32,18 @@ export default function ProductionVideoList({ className, ...restProps }: DsnGrid
                 loop: true
             }
         },
-        {
-            title: "NULLDREI-Documentary",
-            slug: 'Spot',
-            category: ['Video'],
-            src: "https://youtu.be/WOAzN_oYPG0",
-            description: "Production of a documentary by the artist NULLDREI sponsored by the brand Pegasus PRO",
-            overlay: 1,
-            video: {
-                poster: '/assets/img/project/Vignette 5.jpg',
-                loop: true
-            }
-        },
+        // {
+        //     title: "NULLDREI-Documentary",
+        //     slug: 'Spot',
+        //     category: ['Video'],
+        //     src: "https://youtu.be/WOAzN_oYPG0",
+        //     description: "Production of a documentary by the artist NULLDREI sponsored by the brand Pegasus PRO",
+        //     overlay: 1,
+        //     video: {
+        //         poster: '/assets/img/project/Vignette 5.jpg',
+        //         loop: true
+        //     }
+        // },
         {
             title: "ImageFilm - SoPlus Line GmbH",
             slug: 'Spot',
